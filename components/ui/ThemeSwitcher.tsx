@@ -6,7 +6,7 @@ export const ThemeSwitcher = () => {
   
      const handleChange = () => {
         setDarkTheme(!darkTheme);
-        localStorage.setItem('theme', 'light');     
+        
     }
 
     

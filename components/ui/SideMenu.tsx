@@ -27,7 +27,7 @@ export const SideMenu = () => {
         <div className="flex items-center mb-4 p-4 pb-0">
           <button className="navbar-close" onClick={() => handleOpenSideMenu()}>
             <svg className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
         </div>
@@ -35,19 +35,19 @@ export const SideMenu = () => {
         <div className="flex flex-col px-4">
           <ul className="flex flex-col gap-2">
           <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
-            <Link href="/" passHref prefetch={false}>
+            <Link href="/" passHref >
               <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
             </Link>
           </li>
 
         <li className='border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1'  onClick={() => handleOpenSideMenu()}>
-          <Link href="/proyects" passHref prefetch={true}>
+          <Link href="/proyects" passHref >
             <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`}>Proyects</a>
             </Link>
         </li>
         
         <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
-          <Link href="/aboutme" passHref prefetch={true}>
+          <Link href="/aboutme" passHref>
             <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>About me</a>
           </Link>
         </li>
