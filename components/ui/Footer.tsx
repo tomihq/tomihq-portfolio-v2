@@ -6,6 +6,7 @@ export const Footer = () => {
     max-w-2xl border-gray-200 mx-auto pt-8 pb-8 
     sm:pb-4 bg-opacity-60 dark:text-gray-100 border-b-2">
         <div className="flex flex-col md:flex-row gap-6 justify-between w-full">
+            
             <div className="flex flex-col w-4/12">
                 <h3 className="font-bold text-md text-black dark:text-white">Social Media</h3>
                 <ul className="text-gray-800 text-sm dark:text-gray-400">

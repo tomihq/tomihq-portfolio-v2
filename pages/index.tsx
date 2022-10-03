@@ -22,14 +22,13 @@ const Home: NextPage = () => {
       </section>
 
       <section className='flex flex-col gap-6 justify-between w-full'>
-       <h3 className='font-bold text-2xl text-black dark:text-white'>Some of my bored proyects</h3>
+       <h3 className='font-bold text-2xl text-black dark:text-white pr-8 mb-3'>Some of my bored proyects</h3>
         <div className='flex flex-col md:flex-row gap-6'>
           
           <div className='w-full md:w-4/12 bg-white rounded-md border-4 border-indigo-200 flex flex-row px-4 
           text-black cursor-pointer pt-2 dark:bg-black '>
-            <div className='w-9/12'>
+            <div className='w-9/12 pb-3'>
               <h4 className='font-bold dark:text-white'>TwitterClone</h4>
-              <span className='pb-1 underline dark:text-white'>¡My first APP!</span>
               <ol className='dark:text-white'>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
@@ -49,7 +48,6 @@ const Home: NextPage = () => {
           text-black cursor-pointer pt-2 dark:bg-black'>
             <div className='w-9/12 pb-3'>
               <h4 className='font-bold dark:text-white'>TwitterClone</h4>
-              <span className='pb-1 underline dark:text-white'>¡My first APP!</span>
               <ol className='dark:text-white'>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
@@ -67,9 +65,8 @@ const Home: NextPage = () => {
 
           <div className='w-full md:w-4/12 bg-white rounded-md border-4 border-pink-200 flex flex-row px-4 
           text-black cursor-pointer pt-2 dark:bg-black'>
-            <div className='w-9/12'>
+            <div className='w-9/12 pb-3'>
               <h4 className='font-bold dark:text-white'>TwitterClone</h4>
-              <span className='pb-1 underline dark:text-white'>¡My first APP!</span>
               <ol className='dark:text-white'>
                 <li>ReactJS</li>
                 <li>NodeJS</li>

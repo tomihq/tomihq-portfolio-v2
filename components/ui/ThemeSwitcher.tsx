@@ -3,18 +3,14 @@ import { handleSetColorTheme } from '../../helpers/handleSetColorTheme';
 
 export const ThemeSwitcher = () => {
     const [darkTheme, setDarkTheme]= useState<boolean>();
-    
-
+  
      const handleChange = () => {
-
         setDarkTheme(!darkTheme);
-        localStorage.setItem('theme', 'light');
-       
+        localStorage.setItem('theme', 'light');     
     }
 
     
     useEffect(() => {
-        const root = window.document.documentElement;
          const initialColorValue = localStorage.getItem('theme');
          const isUsingDarkTheme:boolean = (initialColorValue === 'dark')
          setDarkTheme(isUsingDarkTheme); 
@@ -22,7 +18,7 @@ export const ThemeSwitcher = () => {
       
     useEffect(() => {
       handleSetColorTheme(darkTheme!);
-      }, [darkTheme]);
+    }, [darkTheme]);
 
   return (
     <button className='w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all' onClick={()=>handleChange()}>

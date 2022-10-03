@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+import { SideMenu } from './SideMenu';
 import { ThemeSwitcher } from './ThemeSwitcher';
 export const Navbar = () => {
   const router = useRouter();
@@ -9,6 +10,7 @@ export const Navbar = () => {
       justify-between w-full relative 
       max-w-2xl border-gray-200 mx-auto pt-8 pb-8 
       sm:pb-4 bg-opacity-60 dark:text-gray-100'>
+      <SideMenu/>
       <section className='ml-[-0.60rem]'>
            <Link href="/" passHref prefetch={true}>
             <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
@@ -24,7 +26,7 @@ export const Navbar = () => {
       </section>
    
      
-        <ThemeSwitcher/>
+      <ThemeSwitcher/>
 
     
       

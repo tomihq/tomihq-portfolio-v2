@@ -6,6 +6,7 @@ export const handleSetColorTheme = (darkTheme:boolean) => {
         }else{
             document.querySelector('html')?.classList.add('dark')
         }
+        
         return;
       
     }
