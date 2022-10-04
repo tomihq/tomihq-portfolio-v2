@@ -15,15 +15,16 @@ const Home: NextPage = () => {
         </div>
         <div className='flex flex-col'>
           <picture className='pb-4'>
-            <source srcSet="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" type="image/jpg"/>
-            <img className='filter grayscale rounded-full max-h-32' src="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" alt="me-picture"/>
+            <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
+            <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>
           </picture>
         </div>
       </section>
 
-      <section className='flex flex-col gap-6 justify-between w-full'>
-       <h3 className='font-bold text-2xl text-black dark:text-white pr-8 mb-3'>Some of my bored proyects</h3>
-        <div className='flex flex-col md:flex-row gap-6'>
+      <section className='flex flex-col gap-6 justify-between w-full border-gray-100 border-b-2
+    dark:border-stone-600'>
+       <h3 className='font-bold text-2xl text-black dark:text-white pr-8 mb-3'>Some Proyects</h3>
+        <div className='flex flex-col md:flex-row gap-6 mb-8'>
           
           <div className='w-full md:w-4/12 bg-white rounded-md border-4 border-indigo-200 flex flex-row px-4 
           text-black cursor-pointer pt-2 dark:bg-black '>
@@ -38,8 +39,8 @@ const Home: NextPage = () => {
             </div>
             <div className='w-3/12'>
               <picture className='pb-4'>
-               <source srcSet="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" type="image/jpg"/>
-               <img className='filter grayscale rounded-full max-h-32' src="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" alt="me-picture"/>  
+               <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
+               <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>  
               </picture>
             </div>
           </div>
@@ -47,7 +48,7 @@ const Home: NextPage = () => {
           <div className='w-full md:w-4/12 bg-white rounded-md border-4 border-yellow-200 flex flex-row px-4 
           text-black cursor-pointer pt-2 dark:bg-black'>
             <div className='w-9/12 pb-3'>
-              <h4 className='font-bold dark:text-white'>TwitterClone</h4>
+              <h4 className='font-bold dark:text-white'>TesloShop</h4>
               <ol className='dark:text-white'>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
@@ -57,8 +58,8 @@ const Home: NextPage = () => {
             </div>
             <div className='w-3/12'>
               <picture className='pb-4'>
-               <source srcSet="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" type="image/jpg"/>
-               <img className='filter grayscale rounded-full max-h-32' src="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" alt="me-picture"/>
+               <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
+               <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>
               </picture>
             </div>
           </div>
@@ -66,9 +67,10 @@ const Home: NextPage = () => {
           <div className='w-full md:w-4/12 bg-white rounded-md border-4 border-pink-200 flex flex-row px-4 
           text-black cursor-pointer pt-2 dark:bg-black'>
             <div className='w-9/12 pb-3'>
-              <h4 className='font-bold dark:text-white'>TwitterClone</h4>
+              <h4 className='font-bold dark:text-white'>Daily Life: Software Engineer</h4>
               <ol className='dark:text-white'>
-                <li>ReactJS</li>
+                <li>NextJS</li>
+                <li>TypeScript</li>
                 <li>NodeJS</li>
                 <li>MongoDB</li>
                 <li>MySQL</li>
@@ -76,8 +78,8 @@ const Home: NextPage = () => {
             </div>
             <div className='w-3/12'>
               <picture className='pb-4'>
-               <source srcSet="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" type="image/jpg"/>
-               <img className='filter grayscale rounded-full max-h-32' src="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" alt="me-picture"/>
+               <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
+               <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>
               </picture>
             </div>
           </div>

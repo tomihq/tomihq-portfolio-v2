@@ -23,6 +23,10 @@ export const Navbar = () => {
         <Link href="/aboutme">
           <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>About me</a>
         </Link>
+
+        <Link href="/carreer">
+          <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Carreer as Software Engineer</a>
+        </Link>
       </section>
    
      

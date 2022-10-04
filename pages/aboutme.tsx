@@ -16,14 +16,15 @@ const AboutMe: NextPage = () => {
             </div>
             <div className='flex flex-col'>
                 <picture className='pb-4'>
-                    <source srcSet="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" type="image/jpg"/>
-                    <img className='filter grayscale rounded-full max-h-32' src="https://leerob.io/_next/image?url=%2Favatar.jpg&w=384&q=75" alt="me-picture"/>
+                    <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
+                    <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>
                 </picture>
             </div>
         </section>
     
-       <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row'>
-        <section className='flex flex-col gap-1 mb-7'>
+       <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
+    dark:border-stone-600 mb-2'>
+        <section className='flex flex-col gap-1 mb-7 md:w-1/3'>
                 <h3 className='font-bold text-2xl text-black dark:text-white'>Essential Info</h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-gray-400'>
                         <ol>
@@ -35,7 +36,7 @@ const AboutMe: NextPage = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col gap-1 mb-7'>
+            <section className='flex flex-col gap-1 mb-7 md:w-1/2'>
                 <h3 className='font-bold text-2xl text-black dark:text-white'>How do I learn/ed?</h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-gray-400'>
                         <ol>
