@@ -15,18 +15,18 @@ export const Footer = () => {
                 <ul className="text-gray-800 text-sm dark:text-gray-400">
                     <li className="mb-1">
                         <Link href="https://twitter.com/ttomihq" passHref>
-                             <a href="" target={'_blank'}>Twitter</a>
+                             <a href="" target={'_blank'} rel="noreferrer">Twitter</a>
                         </Link> 
                     </li>
                     <li className="mb-1">
                         <Link href="https://github.com/tomihq" passHref>
-                             <a href="" target={'_blank'}>GitHub</a>
+                             <a href="" target={'_blank'} rel="noreferrer">GitHub</a>
                         </Link> 
                     </li>
 
                     <li className="mb-1">
                         <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref>
-                             <a href="" target={'_blank'}>Spotify</a>
+                             <a href="" target={'_blank'} rel="noreferrer">Spotify</a>
                         </Link> 
                     </li>
 
@@ -36,8 +36,8 @@ export const Footer = () => {
             <div className="flex flex-col w-4/12 gap-y-1">
                <h3 className="font-bold text-md text-black dark:text-white">Contact Me</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1"><a href="mailto:tomashernandez@gransliving.com" target={'_blank'}>Email</a></li>
-                    <li className="mb-1"><a href="https://twitter.com/ttomihq" target={'_blank'}>Twitter DM</a></li>
+                    <li className="mb-1"><a href="mailto:tomashernandez@gransliving.com" target={'_blank'} rel="noreferrer">Email</a></li>
+                    <li className="mb-1"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter DM</a></li>
                     <li className="mb-1"><a href="">Telekinesis</a></li>
 
                 </ul> 
