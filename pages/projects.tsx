@@ -1,7 +1,7 @@
 import { NextPage } from "next"
 import { Layout } from "../components/layouts"
 
-const Proyects: NextPage = () => {
+const Projects: NextPage = () => {
   return (
     <div className='flex flex-col justify-center px-8'>
         <Layout 
@@ -10,7 +10,7 @@ const Proyects: NextPage = () => {
         >
             <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
                 <div className='flex flex-col pr-8 md:w-9/12'>
-                    <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Proyects</h1>
+                    <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Projects</h1>
                     <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Welcome, outsider! <b className='text-black dark:text-white'>hope you enjoy ✨ </b></h2>
                     <span className='ml-1 text-gray-600 dark:text-gray-400 mb-8'>There is always something to optimize, nothing is perfect. Think big when developing.
                     </span>       
@@ -69,4 +69,4 @@ const Proyects: NextPage = () => {
 }
 
 
-export default Proyects
+export default Projects

@@ -16,8 +16,8 @@ export const Navbar = () => {
             <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
           </Link>
 
-          <Link href="/proyects">
-           <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`}>Proyects</a>
+          <Link href="/projects">
+           <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/projects'?'text-black font-semibold':'text-gray-700'}`}>Projects</a>
           </Link>
         
         <Link href="/aboutme">

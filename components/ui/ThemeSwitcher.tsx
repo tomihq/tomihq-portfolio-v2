@@ -8,8 +8,6 @@ export const ThemeSwitcher = () => {
         setDarkTheme(!darkTheme);
         
     }
-
-    
     useEffect(() => {
          const initialColorValue = localStorage.getItem('theme');
          const isUsingDarkTheme:boolean = (initialColorValue === 'dark')
