@@ -36,7 +36,7 @@ export const Footer = () => {
             <div className="flex flex-col w-4/12 gap-y-1">
                <h3 className="font-bold text-md text-black dark:text-white">Contact Me</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1"><a href="mailto:tomashernandez@gransliving.com" target={'_blank'} rel="noreferrer">Email</a></li>
+                    <li className="mb-1"><a href="mailto:hernandeztomas584@gmail.com" target={'_blank'} rel="noreferrer">Email</a></li>
                     <li className="mb-1"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter DM</a></li>
                     <li className="mb-1"><a href="">Telekinesis</a></li>
 
@@ -46,9 +46,20 @@ export const Footer = () => {
             <div className="flex flex-col w-4/12 gap-y-1">
                <h3 className="font-bold text-md text-black dark:text-white">About my future</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400" >
-                    <li className="mb-1">Study</li>
-                    <li className="mb-1">Carreer as Software Engineer</li>
-                    <li className="mb-1">CTO</li>
+                    <li className="mb-1">
+                        <Link href="/aboutme" passHref>
+                             <a href="" rel="noreferrer">Academic</a>
+                        </Link> 
+                    </li>
+                    <li className="mb-1">
+                        <Link href="/carreer" passHref>
+                             <a href="" rel="noreferrer">Carreer as Software Engineer</a>
+                        </Link> 
+                    </li>
+                    <li className="mb-1"><Link href="/projects" passHref>
+                             <a href="" rel="noreferrer">Personal Projects</a>
+                        </Link> 
+                    </li>
 
                 </ul> 
             </div>
@@ -60,7 +71,7 @@ export const Footer = () => {
         max-w-2xl border-gray-200 mx-auto pt-3 pb-8 
         sm:pb-4 bg-opacity-60 dark:text-gray-100">
         <div className='text-gray-600 dark:text-white'>
-                Made with ❤️ by Tomi Hernández
+                Made with ❤️ by Tomi Hernández using NextJS and TypeScript
         </div>
     </div>
     

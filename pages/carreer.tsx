@@ -10,7 +10,7 @@ const Carreer: NextPage = () => {
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
             <div className='flex flex-col pr-8 md:w-9/12'>
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Software Engineer Experience</h1>
-                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>I even used a banana to create software, <b className='text-black  dark:text-white'> yeeesh✨ </b></h2>
+                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>I even used a banana to create software <b className='text-black  dark:text-white'> ✨ </b></h2>
                 <span className='ml-1 text-gray-600 dark:text-gray-400 mb-8'>I've programmed in Haskell, C, Visual Basic, Java, PHP and currently TypeScript.
 
 
@@ -27,7 +27,7 @@ const Carreer: NextPage = () => {
        <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
     dark:border-stone-600 mb-2'>
         <section className='flex flex-col gap-1 mb-7 md:w-1/3'>
-                <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>The Beginning</h3>
+                <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Timeline</h3>
                     <div className='flex flex-col text-gray-800 dark:text-gray-400 gap-1'>
                         <span><span className='font-semibold dark:text-gray-400'>Hobby:</span> 2010 using Scratch</span>
                         <span><span className='font-semibold dark:text-gray-400'>Study:</span> 2016 learning Algorithms and Data Estructures at School</span>
