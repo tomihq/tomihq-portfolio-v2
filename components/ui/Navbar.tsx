@@ -12,20 +12,20 @@ export const Navbar = () => {
       sm:pb-4 bg-opacity-60 dark:text-gray-100'>
       <SideMenu/>
       <section className='ml-[-0.60rem]'>
-           <Link href="/">
-            <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
+           <Link href="/" passHref>
+            <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
           </Link>
 
-          <Link href="/projects">
-           <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/projects'?'text-black font-semibold':'text-gray-700'}`}>Projects</a>
+          <Link href="/projects" passHref>
+           <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/projects'?'text-black font-semibold':'text-gray-700'}`}>Projects</a>
           </Link>
         
-        <Link href="/aboutme">
-          <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>About me</a>
+        <Link href="/aboutme" passHref>
+          <a  className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>About me</a>
         </Link>
 
-        <Link href="/carreer">
-          <a href="" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Carreer as Software Engineer</a>
+        <Link href="/carreer" passHref>
+          <a  className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Carreer as Software Engineer</a>
         </Link>
       </section>
    
