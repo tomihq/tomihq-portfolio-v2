@@ -10,54 +10,54 @@ export const Footer = () => {
     dark:border-stone-600  flex-col gap-3">
         <div className="flex flex-col md:flex-row gap-6 justify-between w-full">
             
-            <div className="flex flex-col w-4/12 gap-y-1">
-                <h3 className="font-bold text-md text-black dark:text-white">Social Media</h3>
+            <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
+                <h3 className="font-bold text-md text-black dark:text-white text-xl">Social Media</h3>
                 <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1">
+                    <li className="mb-1 text-base">
                         <Link href="https://twitter.com/ttomihq" passHref>
-                             <a href="" target={'_blank'} rel="noreferrer">Twitter</a>
+                             <a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter</a>
                         </Link> 
                     </li>
-                    <li className="mb-1">
-                        <Link href="https://github.com/tomihq" passHref>
-                             <a href="" target={'_blank'} rel="noreferrer">GitHub</a>
+                    <li className="mb-1 text-base">
+                        <Link href="https://github.com/tomihq" passHref >
+                             <a href="https://github.com/tomihq" target={'_blank'} rel="noreferrer">GitHub</a>
                         </Link> 
                     </li>
 
-                    <li className="mb-1">
+                    <li className="mb-1 text-base">
                         <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref>
-                             <a href="" target={'_blank'} rel="noreferrer">Spotify</a>
+                             <a href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" target={'_blank'} rel="noreferrer">Spotify</a>
                         </Link> 
                     </li>
 
                 </ul>
 
             </div>
-            <div className="flex flex-col w-4/12 gap-y-1">
-               <h3 className="font-bold text-md text-black dark:text-white">Contact Me</h3>
+            <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
+               <h3 className="font-bold text-md text-black dark:text-white  text-xl">Contact Me</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1"><a href="mailto:hernandeztomas584@gmail.com" target={'_blank'} rel="noreferrer">Email</a></li>
-                    <li className="mb-1"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter DM</a></li>
-                    <li className="mb-1"><a href="">Telekinesis</a></li>
+                    <li className="mb-1 text-base"><a href="mailto:hernandeztomas584@gmail.com" target={'_blank'} rel="noreferrer">Email</a></li>
+                    <li className="mb-1 text-base"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter DM</a></li>
+                    <li className="mb-1 text-base"><a href="https://twitter.com/ttomihq" target={'_blank'}>Telekinesis</a></li>
 
                 </ul> 
             </div>
 
-            <div className="flex flex-col w-4/12 gap-y-1">
-               <h3 className="font-bold text-md text-black dark:text-white">About my future</h3>
+            <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1 ">
+               <h3 className="font-bold text-md text-black dark:text-white  text-xl">About my future</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400" >
-                    <li className="mb-1">
+                    <li className="mb-1 text-base">
                         <Link href="/aboutme" passHref>
-                             <a href="" rel="noreferrer">Academic</a>
+                             <a href="/aboutme" rel="noreferrer">Academic</a>
                         </Link> 
                     </li>
-                    <li className="mb-1">
+                    <li className="mb-1 text-base">
                         <Link href="/carreer" passHref>
-                             <a href="" rel="noreferrer">Carreer as Software Engineer</a>
+                             <a href="/carreer" rel="noreferrer">Carreer as Software Engineer</a>
                         </Link> 
                     </li>
-                    <li className="mb-1"><Link href="/projects" passHref>
-                             <a href="" rel="noreferrer">Personal Projects</a>
+                    <li className="mb-1 text-base"><Link href="/projects" passHref>
+                             <a href="/projects" rel="noreferrer">Personal Projects</a>
                         </Link> 
                     </li>
 
