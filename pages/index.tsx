@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import Link from 'next/link';
 import { Button } from '../components/ui/Button';
+import { AvatarPicture } from '../components/ui/AvatarPicture';
 const Home: NextPage = () => {
 
     const hue = keyframes`
@@ -75,10 +76,7 @@ const Home: NextPage = () => {
 
           </div>
           <div className='flex flex-col'>
-            <picture className='pb-4'>
-              <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg" />
-              <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture" />
-            </picture>
+            <AvatarPicture/>
           </div>
         </section>
 

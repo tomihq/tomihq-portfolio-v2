@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Layout } from '../components/layouts'
+import { AvatarPicture } from '../components/ui/'
 const Carreer: NextPage = () => {
    return(
     <div className='flex flex-col justify-center px-8'>
@@ -17,10 +18,7 @@ const Carreer: NextPage = () => {
                 </span>       
             </div>
             <div className='flex flex-col'>
-                <picture className='pb-4'>
-                    <source srcSet="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" type="image/jpg"/>
-                    <img className='filter grayscale rounded-full max-h-32' src="https://pbs.twimg.com/profile_images/1575292182801653761/7ARe6ZOJ_400x400.jpg" alt="me-picture"/>
-                </picture>
+                <AvatarPicture/>
             </div>
         </section>
     
