@@ -38,7 +38,7 @@ export const Footer = () => {
                <ul className="text-gray-800 text-sm dark:text-gray-400">
                     <li className="mb-1 text-base"><a href="mailto:hernandeztomas584@gmail.com" target={'_blank'} rel="noreferrer">Email</a></li>
                     <li className="mb-1 text-base"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Twitter DM</a></li>
-                    <li className="mb-1 text-base"><a href="https://twitter.com/ttomihq" target={'_blank'}>Telekinesis</a></li>
+                    <li className="mb-1 text-base"><a href="https://twitter.com/ttomihq" target={'_blank'} rel="noreferrer">Telekinesis</a></li>
 
                 </ul> 
             </div>
