@@ -5,11 +5,15 @@ import Image from 'next/image'
 
 export const AvatarPicture = () =>{
     return(
-        <Image
-            src={AVATAR.src}
-            className='filter grayscale rounded-full max-h-32'
-            alt="Tomás Hernández Picture"
-           
-        />
+        <section>
+            <Image
+                src={AVATAR.src}
+                className='filter grayscale rounded-full max-h-32'
+                alt="Tomás Hernández Picture"
+                width={128}
+                height={128}
+            
+           />
+        </section>
     )
 }
