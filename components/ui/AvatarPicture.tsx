@@ -1,9 +1,16 @@
-import avatarImg from '../../assets/img/tomi-2022.jpg';
+import {AVATAR} from '../../assets/img';
+import Image from 'next/image'
+
+
+
 export const AvatarPicture = () =>{
     return(
-        <picture className='pb-4'>
-                    <source srcSet={avatarImg.src}  type="image/jpg"/>
-                    <img className='filter grayscale rounded-full max-h-32' src={avatarImg.src} alt="me-picture"/>
-        </picture>
+        <Image
+            src={AVATAR.src}
+            className='filter grayscale rounded-full max-h-32'
+            alt="Tomás Hernández Picture"
+            width={128}
+            height={128}
+        />
     )
 }
