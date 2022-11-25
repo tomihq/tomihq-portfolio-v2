@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import { Layout } from '../components/layouts';
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import Link from 'next/link';
@@ -42,9 +41,7 @@ const Home: NextPage = () => {
               <b className="text-black dark:text-white"> escalables</b>,
               <b className="text-black dark:text-white"> <span>útiles</span> </b>  y
               <b className="text-black dark:text-white"> eficientes</b> para los usuarios, que les permita hacer más en  menos tiempo. <br />
-             
-    
-        
+              
               <br />
               <span>
                  <b className='text-black dark:text-white mb-4'>Reminder</b>: Siempre se encuentra algo para <b className='dark:text-white text-black'>optimizar </b>no tengas miedo a <b><span className=' text-black dark:text-white '>refactorizar</span></b> y <b className='dark:text-white text-black '> testeá tu aplicación</b> en todos los dispositivos, <b className='text-black dark:text-white'>¡tu local no es un cliente!</b>
@@ -66,7 +63,7 @@ const Home: NextPage = () => {
                   buttonClasses='border border-gray-700 bg-white  rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline dark:bg-black dark:border-neutral-400 dark:hover:bg-gray-800
                   text-black dark:text-white'
                 >
-                    <Link href="  https://github.com/tomihq" prefetch={true}>
+                    <Link href="https://github.com/tomihq" prefetch={true}>
                       <a target={'_blank'}> View GitHub</a>
                     </Link>
                 </Button>

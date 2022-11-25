@@ -1,8 +1,5 @@
 import {AVATAR} from '../../assets/img';
 import Image from 'next/image'
-
-
-
 export const AvatarPicture = () =>{
     return(
         <section>

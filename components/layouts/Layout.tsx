@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { FC, PropsWithChildren } from "react";
-import { Navbar, SideMenu } from '../ui';
+import { Navbar } from '../ui';
 import { Footer } from "../ui/Footer";
 interface Props {
     title: string;
@@ -26,8 +26,6 @@ export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescr
         <nav>
              <Navbar/>
         </nav>
-
-        {/* <SideMenu/> */}
 
         <main className='
                  max-w-2xl border-gray-200 mx-auto pt-8 pb-8 

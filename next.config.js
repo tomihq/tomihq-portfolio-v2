@@ -5,6 +5,10 @@ const nextConfig = {
   i18n: {
     locales: ["es"],
     defaultLocale: "es"
+  },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
   }
 }
 
