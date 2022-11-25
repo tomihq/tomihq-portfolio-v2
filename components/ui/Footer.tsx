@@ -13,18 +13,18 @@ export const Footer = () => {
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
                 <h3 className="font-bold text-md text-black dark:text-white text-xl">Social Media</h3>
                 <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://twitter.com/ttomihq" passHref>
                              <a target={'_blank'} rel="noreferrer">Twitter</a>
                         </Link> 
                     </li>
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://github.com/tomihq" passHref >
                              <a target={'_blank'} rel="noreferrer">GitHub</a>
                         </Link> 
                     </li>
 
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref>
                              <a target={'_blank'} rel="noreferrer">Spotify</a>
                         </Link> 
@@ -36,17 +36,17 @@ export const Footer = () => {
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
                <h3 className="font-bold text-md text-black dark:text-white  text-xl">Contact Me</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://github.com/tomihq" passHref>
                             <a target={'_blank'} rel="noreferrer">Email</a>
                         </Link>
                     </li>
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://twitter.com/ttomihq" passHref>
                             <a target={'_blank'} rel="noreferrer">Twitter DM</a>
                         </Link>
                     </li>
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="https://twitter.com/ttomihq" passHref>
                             <a  target={'_blank'} rel="noreferrer">Telekinesis</a>
                         </Link>
@@ -58,17 +58,17 @@ export const Footer = () => {
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1 ">
                <h3 className="font-bold text-md text-black dark:text-white  text-xl">About my future</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400" >
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="/aboutme" passHref>
                              <a rel="noreferrer">Academic</a>
                         </Link> 
                     </li>
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="/carreer" passHref>
                              <a rel="noreferrer">Carreer as Software Engineer</a>
                         </Link> 
                     </li>
-                    <li className="mb-1 text-base">
+                    <li className="mb-1 text-xl md:text-base">
                         <Link href="/projects" passHref>
                              <a rel="noreferrer">Personal Projects</a>
                         </Link> 
