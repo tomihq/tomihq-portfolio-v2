@@ -1,7 +1,7 @@
 import {ReactElement} from 'react';
 interface ButtonProps {
-    children: React.ReactNode
-    buttonClasses: string
+    children?: React.ReactNode
+    buttonClasses?: string
     onClick?: any;
 }
 

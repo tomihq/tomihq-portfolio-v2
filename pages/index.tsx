@@ -111,9 +111,8 @@ const Home: NextPage = () => {
                   text-black dark:text-black'
                   
                 >
-            
                  <Link href="files/cv.pdf" passHref>
-                      <a target="_blank" download="Tomás Hernández CV">      Download CV   </a>
+                      <a target="_blank" download="Tomás Hernández CV"> Download CV </a>
                     </Link>
             </Button>
 

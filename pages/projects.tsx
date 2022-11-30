@@ -1,8 +1,13 @@
 import { NextPage } from "next"
+import { useState } from "react";
 import { Layout } from "../components/layouts"
-import { AvatarPicture } from "../components/ui"
+import { AvatarPicture, ProjectCard } from "../components/ui"
+import { IProject } from "../interfaces";
+import {PROJECTS} from '../utils/projects';
 
 const Projects: NextPage = () => {
+  
+
   return (
     <div className='flex flex-col justify-center px-8'>
         <Layout 
@@ -22,9 +27,13 @@ const Projects: NextPage = () => {
         </section>
 
         <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
-    dark:border-stone-600 mb-2'>
-        <section className='flex flex-col gap-1 mb-7 md:w-1/3'>
-          <h1 className="font-bold text-3xl md:text-3xl tracking-tight mb-1 text-black dark:text-white pb-1">Pronto...</h1>
+        dark:border-stone-600 mb-2'>
+        <section className='flex flex-col gap-1 mb-7 '>
+          <div className="flex flex-col md:flex-row flex-wrap px-4 justify-between">
+              {PROJECTS.map((project: IProject) =>{
+                return <ProjectCard {...project} key={project.slug}  />
+              })}
+          </div>
         </section>
        </div>
 
