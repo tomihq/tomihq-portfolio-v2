@@ -107,8 +107,8 @@ const Home: NextPage = () => {
                 </div>
             </div>
             <Button
-                  buttonClasses='border border-gray-700 bg-black text-white  rounded-md mt-4 px-4 py-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline dark:bg-black dark:border-neutral-400 dark:hover:bg-gray-800
-                  text-black dark:text-white'
+                  buttonClasses='border border-gray-700 bg-black text-white  rounded-md mt-4 px-4 py-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline dark:bg-white dark:border-neutral-400 dark:hover:bg-gray-800
+                  text-black dark:text-black'
                   
                 >
             
