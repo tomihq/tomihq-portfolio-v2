@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
         title={'Proyects Page'}
         pageDescription={'Tomi Hernández Portfolio Proyects Page'}
         >
-            <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
+            <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2  dark:border-stone-600'>
                 <div className='flex flex-col pr-8 md:w-9/12'>
                     <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Proyectos</h1>
                     <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Welcome, outsider! <b className='text-black dark:text-white'>hope you enjoy ✨ </b></h2>
@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
         <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
         dark:border-stone-600 mb-2'>
         <section className='flex flex-col gap-1 mb-7 '>
-          <div className="flex flex-col md:flex-row flex-wrap px-4 justify-between">
+          <div className="flex flex-col md:flex-row flex-wrap px-4 justify-between h-auto">
               {PROJECTS.map((project: IProject) =>{
                 return <ProjectCard {...project} key={project.slug}  />
               })}
