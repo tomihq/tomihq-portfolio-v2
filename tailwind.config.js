@@ -19,6 +19,7 @@ module.exports = {
           'terciary': '#61AEC9',
           },
     },
+    
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }

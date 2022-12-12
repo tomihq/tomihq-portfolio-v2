@@ -8,7 +8,7 @@ export const ProjectCard = (data: IProject  ) => {
 
   const {slug, title, description, tecnologies, link, status, lastUpdate} = data;
   const [cardHovered, setCardHovered] = useState<string>();
-  
+
 
   const onHoverCard = (slug: string) =>{
 
@@ -25,13 +25,12 @@ export const ProjectCard = (data: IProject  ) => {
                 key={slug} 
                 onMouseEnter={() => onHoverCard(slug)}
                 onClick={() => onHoverCard(slug)}
-              
                 onMouseLeave={() => setCardHovered("")}
                 >
                   <CardGradient>
                   <h3 className="text-black dark:text-white text-2xl font-semibold">{title}</h3>
-                    <div className={`front-card ${slug==cardHovered?'hidden':''} text-left`}>
-                          <p className="text-black dark:text-gray-300 text-xs font-semibold sm:text-base">{description}</p>
+                    <div className={`front-card ${slug==cardHovered?'hidden':''} text-left overflow-y-scroll sm:overflow-hidden`}>
+                          <p className="text-black dark:text-gray-300  ">{description}</p>
                     </div>
                     <div className={`back-card ${slug==cardHovered?'':'hidden'} flex flex-col mt-1`} >
                           <div className="text-black dark:text-white">
@@ -48,10 +47,12 @@ export const ProjectCard = (data: IProject  ) => {
                             <p className='inline dark:text-gray-300'> {lastUpdate}</p>
                           </div>
                           <Button  buttonClasses='mt-4 border border-gray-700 bg-black text-white  rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline dark:bg-white dark:border-neutral-400 dark:hover:bg-stone-800 dark:hover:text-white
-                          text-black dark:text-black'>
-                            ¡Miralo acá!
+                          text-black dark:text-black' 
+                         
+                          >
+                            
                             <Link href={link} passHref>
-                              <a target="_blank"></a>
+                              <a target="_blank">¡Miralo acá!</a>
                             </Link>
                           </Button>
                     </div>

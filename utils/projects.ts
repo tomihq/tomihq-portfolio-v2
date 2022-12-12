@@ -4,11 +4,11 @@ export const PROJECTS:IProject[] = [
     {
         "slug": "markdown-blog",
         "title": "Markdown Blog",
-        "description": "Un pequeño blog que realicé utilizando tecnogías como NextJS, TypeScript, MDX y NextJS priorizando los parámetros de accesibilidad web, el rendimiento, visibilidad y escabilidad utilizando buenas prácticas y contenido generado de forma estática siempre que sea posible.",
+        "description": "Blog que realicé utilizando tecnogías como NextJS, TypeScript, MDX y NextJS priorizando accesibilidad web, el rendimiento, visibilidad y escabilidad utilizando buenas prácticas y contenido generado de forma estática siempre que sea posible.",
         "tecnologies": "NextJS, TypeScript, MDX, TailwindCSS, MongoDB",
         "status": "in-progress",
         "lastUpdate": "28 de Noviembre de 2022",
-        "link": "https://github.com/tomihq/tomihq-markdown-blog"
+        "link": "https://tomashernandez.tech/"
     },
     {
         "slug": "twitter-app",
@@ -21,7 +21,7 @@ export const PROJECTS:IProject[] = [
     },
     {
         "slug": "next-ecommerce",
-        "title": "Next Commerce",
+        "title": "Commerce",
         "description": "En este proyecto me gustó la idea de hacerlo debido a la cantidad de personas que pueden utilizarlo a futuro, ver como rinde en temas de escabilidad, eficacia, y visiblidad en la web además de profundizar el conocimiento en pasarelas de pago y mucho más.",
         "tecnologies": "NodeJS, TypeScript, NextJS, MongoDB, TailwindCSS",
         "status": "in-progress",
