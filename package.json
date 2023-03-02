@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.5.10",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/inter": "^4.5.15",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
     "@tailwindcss/typography": "^0.5.8",
     "next": "12.3.1",
     "next-themes": "^0.2.1",
@@ -31,6 +35,7 @@
     "next-unused": "^0.0.6",
     "npm": "^8.19.2",
     "postcss": "^8.4.17",
+    "tailwind-scrollbar": "^2.1.0",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
   }

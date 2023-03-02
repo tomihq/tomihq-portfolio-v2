@@ -18,8 +18,11 @@ module.exports = {
           'secondary': '#8FA206',
           'terciary': '#61AEC9',
           },
+        primary: {
+          'black': "#060607"
+        }
     },
     
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"),  require('tailwind-scrollbar'),],
 }

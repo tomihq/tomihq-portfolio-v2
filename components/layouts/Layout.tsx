@@ -28,7 +28,7 @@ export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescr
         </nav>
 
         <main className='
-                 max-w-2xl border-gray-200 mx-auto pt-8 pb-8 
+                 max-w-4xl border-gray-200 mx-auto pt-8 pb-8 
                  sm:pb-0 bg-opacity-60 dark:text-gray-100'>
             {children}
         </main>

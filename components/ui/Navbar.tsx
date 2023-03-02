@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <div className='flex items-center 
       justify-between w-full relative 
-      max-w-2xl border-gray-200 mx-auto pt-8 pb-8 
+      max-w-4xl border-gray-200 mx-auto pt-8 pb-8 
       sm:pb-4 bg-opacity-60 dark:text-gray-100'>
       <SideMenu/>
       <section className='ml-[-0.60rem]'>
