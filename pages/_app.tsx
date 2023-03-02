@@ -1,14 +1,15 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes'
 import "@fontsource/inter";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/900.css";
 import { motion } from 'framer-motion';
+import { ThemeProvider } from 'next-themes'
+import KBarProvider from '../components/Kbar/KBarProvider';
+import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
-   <motion.div  initial="pageInitial" animate="pageAnimate" variants={{
+    <motion.div initial="pageInitial" animate="pageAnimate" variants={{
       pageInitial: {
         opacity: 0.8
       },
@@ -23,8 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       ease: "anticipate",
       duration: 0.7
     }}>
-      <ThemeProvider enableSystem={true} attribute='class'>
-          <Component {...pageProps} />
+       <ThemeProvider enableSystem={true} attribute='class'>
+        <KBarProvider >
+            <Component {...pageProps} />
+        </KBarProvider>
       </ThemeProvider>
     </motion.div>
   </>
