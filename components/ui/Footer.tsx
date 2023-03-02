@@ -5,7 +5,7 @@ export const Footer = () => {
     
     <div className="flex items-start 
     justify-between w-full relative 
-    max-w-2xl mx-auto pt-8 pb-8 
+    max-w-4xl mx-auto pt-8 pb-8 
     sm:pb-8 bg-opacity-60 border-gray-100 border-b-2
     dark:border-stone-600  flex-col gap-3">
         <div className="flex flex-col md:flex-row gap-6 justify-between w-full">
