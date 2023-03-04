@@ -56,5 +56,20 @@ export const PROJECTS:IProject[] = [
             }
          ]
     },
+    {
+        "slug": "tomihq-figma-to-nextjs",
+        "title": "Figma Designs to NextJS & Tailwind",
+        "description": "Diseños de figma plasmados en un proyecto de NextJS y TailwindCSS.",
+        "tecnologies": ["NextJS", "TypeScript", "TailwindCSS"],
+        "status": "in-progress",
+        "lastUpdate": "12 de Enero de 2023",
+        "links": [
+            {
+                icon: 'github', 
+                url: "https://github.com/tomihq/tomihq-figma-to-nextjs",
+                ariaLabel: 'Enlace de GitHub al repositorio de Figma designs to NextJS & Tailwind de tomihq'
+            }
+         ]
+    },
 
 ]

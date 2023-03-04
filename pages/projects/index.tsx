@@ -1,12 +1,17 @@
-import { NextPage } from "next"
-import { Layout } from "../components/layouts"
-import { AvatarPicture, ProjectCard } from "../components/ui"
-import { IProject } from "../interfaces";
-import {PROJECTS} from '../utils/projects';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, NextPage } from "next"
+import { Layout } from "../../components/layouts"
+import { AvatarPicture, ProjectCard } from "../../components/ui"
+import { IProject } from "../../interfaces";
+import {PROJECTS} from '../../utils/projects';
 
-const Projects: NextPage = () => {
-  
+type PageProps = {
+  projects: any[]
+  currentPage: number
+  totalProjects: number
+}
 
+
+const Projects = ({ projects, currentPage, totalProjects }: PageProps) => {
   return (
     <div className='flex flex-col justify-center px-8'>
         <Layout 
@@ -33,18 +38,41 @@ const Projects: NextPage = () => {
         dark:border-stone-600 mb-2'>
         <section className='flex flex-col gap-1 mb-7 '>
           <div className="flex flex-col md:flex-row w-full flex-wrap justify-between ">
-              {PROJECTS.map((project: IProject) =>{
+              {projects.map((project: IProject) =>{
                 return <ProjectCard {...project} key={project.slug}  />
               })}
           </div>
         </section>
        </div>
+       
 
    </Layout>
   
   </div>
   )
 }
+
+const getProjects = ({limit, page}: {limit: number, page: number}) =>{
+  const paginatedProjects =  PROJECTS.slice((page - 1) * limit, page * limit)
+  
+  return { projects: paginatedProjects, total: PROJECTS.length }
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const PER_PAGE = 4;
+  const { projects, total } =  getProjects({ limit: PER_PAGE, page: 1 })
+
+
+  return {
+    props: {
+      projects,
+      totalProjects: total,
+      currentPage: 1,
+    },
+    revalidate: 60 * 60 * 24, 
+  }
+}
+
 
 
 export default Projects

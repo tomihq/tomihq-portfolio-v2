@@ -7,7 +7,6 @@ export const Navbar = () => {
   const router = useRouter();
 
   const { query } = useKBar()
-  console.log(query.toggle)
 
 
   return (
