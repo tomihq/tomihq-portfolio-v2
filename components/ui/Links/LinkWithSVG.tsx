@@ -15,7 +15,7 @@ interface Icons {
 }
 
 const icons:Icons[] = [
-  {id: "github", component: <GitHubIcon className='hover:scale-150 duration-300 transition-all fill-black dark:fill-white scale-125'/>}, 
+  {id: "github", component: <GitHubIcon className='hover:scale-150 duration-300 transition-all text-black dark:text-white scale-125'/>}, 
   {id: 'link', component: <LinkSVG className="hover:scale-150 duration-300 transition-all text-black dark:text-white 
   scale-125"/>}
 ]

@@ -31,11 +31,9 @@ export const ProjectCard = (data: IProject  ) => {
                     }
                     
                     <h3 className="text-black dark:text-white text-2xl font-semibold mt-3">{title}</h3>
-                    <div className={`front-card text-left h-96 overflow-y-scroll md:overflow-auto scrollbar-thumb-gray-900 scrollbar-track-gray-100 scrollbar-thin`}>
-                            <p className="text-black dark:text-gray-300   ">{description}</p>
-                      </div>
+                    
                       <div className={`back-card  flex flex-col `} >
-                            <div className="text-black dark:text-white">
+                            <div className="text-black dark:text-white ">
                               <label htmlFor={`tecnologies-${slug}`} ><p className='font-semibold mb-4 text-lg'> Tecnologías utilizadas</p></label>
                                 <List list={tecnologies}>
                                   <FiberManualRecordOutlinedIcon className='scale-50'/>

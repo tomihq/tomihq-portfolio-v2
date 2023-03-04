@@ -16,7 +16,7 @@ export const PROJECTS:IProject[] = [
         "slug": "twitter-app",
         "title": "Twitter App",
         "description": "Mi primer proyecto. Red social parecida a Twitter el cual tiene autenticación, caché, websockets, y lo común en Twitter, crear tweets, eliminarlos, editar tu perfil, recibir notificaciones cuando llega un mensaje o hay evento en un tweet tuyo, etc.",
-        "tecnologies": ["NodeJS", "React", "MongoDB", "vanilla CSS", "Material UI", "SocketIO"],
+        "tecnologies": ["NodeJS", "React", "MongoDB", "Vanilla CSS", "Material UI", "SocketIO"],
         "status": "in-progress",
         "lastUpdate": "18 de Septiembre de 2022",
         "links": [

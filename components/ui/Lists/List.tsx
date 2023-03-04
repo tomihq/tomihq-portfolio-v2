@@ -4,7 +4,7 @@ interface IList {
     children: any;
 }
 
-const List = ({list, listStyles = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  ', children}: IList) => {
+const List = ({list, listStyles = 'flex flex-col    ', children}: IList) => {
   return (
     <ul className={listStyles}>
         {
