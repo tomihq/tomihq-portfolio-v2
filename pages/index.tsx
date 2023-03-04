@@ -31,8 +31,11 @@ const Home: NextPage = () => {
   return (
     <div className='flex flex-col justify-center px-8'>
       <Layout
-        title={'Home Page'}
+        title={'Portfolio'}
         pageDescription={'Tomi Hernández Portfolio Home Page'}
+        imageFullUrl={'https://avatars.githubusercontent.com/u/72570859?s=400&u=49352445697d9e9b2cd7ff878022bb65c9bf50d3&v=4'}
+        canonicalURL={'/'}
+        robotsAction={'follow'}
       >
         <section className='flex flex-col-reverse border-gray-100 border-b-2  justify-between md:flex-row mb-6 dark:border-stone-600'>
           <div className='flex flex-col pr-8 md:w-9/12'>

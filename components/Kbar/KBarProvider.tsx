@@ -45,15 +45,7 @@ const KBar = (props: KBarProps) => {
 				window.open("https://www.linkedin.com/in/tomihq/", "_blank"),
 			/* icon: <LinkedIn width="30" height="30" />, */
 		},
-		{
-			id: "instagram",
-			name: "Instagram",
-			keywords: "ig instagram",
-			section: "Social",
-			perform: () =>
-				window.open("https://www.instagram.com/tomihq/", "_blank"),
-			/* icon: <Instagram width="30" height="30" />, */
-		},
+		
 	]
 
 	return (

@@ -27,7 +27,7 @@ const AboutMe: NextPage = () => {
    return(
     <div className='flex flex-col justify-center px-8'>
     <Layout 
-    title={'Proyects Page'}
+    title={'Acerca de mí'}
     pageDescription={'Tomi Hernández Portfolio Proyects Page'}
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
