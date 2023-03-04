@@ -42,19 +42,19 @@ export const SideMenu = () => {
 
         <li className='border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1'  onClick={() => handleOpenSideMenu()}>
           <Link href="/projects" passHref >
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`}>Projects</a>
+            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`}>Proyectos</a>
             </Link>
         </li>
         
         <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
           <Link href="/aboutme" passHref>
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>About me</a>
+            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>Acerca de mí</a>
           </Link>
         </li>
 
         <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
           <Link href="/carreer" passHref>
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Carreer as Software Engineer</a>
+            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Mi camino como Software Engineer</a>
           </Link>
         </li>
           </ul>

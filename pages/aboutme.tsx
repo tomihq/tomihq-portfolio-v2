@@ -61,13 +61,14 @@ const AboutMe: NextPage = () => {
             </section>
 
             <section className='flex flex-col gap-1 mb-7 md:w-1/2'>
-                <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Académico</h3>
+                <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Aprendizaje</h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-gray-400'>
                         <ol>
                                 <li>Soy <b className='text-black dark:text-white'>egresado</b>  de una      
                                 <b className=' text-black dark:text-white'> Escuela Técnica orientada a Computación</b>. </li>
-                                <li>Leyendo <b className=' text-black dark:text-white'>documentación</b> (primordial)</li>
-                                <li>Leyendo <b className='text-black dark:text-white'>libros</b> acerca de desarrollo de Software.</li>
+                                <li className='text-black dark:text-white'> Estudiante de Ciencias de la Computación en la <strong>Universidad de Buenos Aires</strong> (UBA).</li>
+                                <li>Leo <b className=' text-black dark:text-white'>documentación</b></li>
+                                <li>Leo <b className='text-black dark:text-white'>libros</b> acerca de desarrollo de Software.</li>
                                 <li>Cursos en <b className='text-black dark:text-white'>Udemy</b>.</li>
                                 <li>Cursos en <b className='text-black dark:text-white'>Platzi</b>.</li>
                                 
