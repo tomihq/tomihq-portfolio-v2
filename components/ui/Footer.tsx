@@ -5,7 +5,7 @@ export const Footer = () => {
     
     <div className="flex items-start 
     justify-between w-full relative 
-    max-w-2xl mx-auto pt-8 pb-8 
+    max-w-4xl mx-auto pt-8 pb-8 
     sm:pb-8 bg-opacity-60 border-gray-100 border-b-2
     dark:border-stone-600  flex-col gap-3">
         <div className="flex flex-col md:flex-row gap-6 justify-between w-full">
@@ -34,10 +34,10 @@ export const Footer = () => {
 
             </div>
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
-               <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Contact Me</h3>
+               <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Contáctame</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://github.com/tomihq" passHref>
+                        <Link href="mailto:hernandeztomas584@gmail.com" passHref>
                             <a target={'_blank'} rel="noreferrer">Email</a>
                         </Link>
                     </li>
@@ -46,31 +46,26 @@ export const Footer = () => {
                             <a target={'_blank'} rel="noreferrer">Twitter DM</a>
                         </Link>
                     </li>
-                    <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://twitter.com/ttomihq" passHref>
-                            <a  target={'_blank'} rel="noreferrer">Telekinesis</a>
-                        </Link>
-                    </li>
-
+                    
                 </ul> 
             </div>
 
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1 ">
-               <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">About my future</h3>
+               <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Acerca de mi futuro</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400" >
                     <li className="mb-1 text-xl md:text-base">
                         <Link href="/aboutme" passHref>
-                             <a rel="noreferrer">Academic</a>
+                             <a rel="noreferrer">Académico</a>
                         </Link> 
                     </li>
                     <li className="mb-1 text-xl md:text-base">
                         <Link href="/carreer" passHref>
-                             <a rel="noreferrer">Carreer as Software Engineer</a>
+                             <a rel="noreferrer">Mi camino como Software Engineer</a>
                         </Link> 
                     </li>
                     <li className="mb-1 text-xl md:text-base">
                         <Link href="/projects" passHref>
-                             <a rel="noreferrer">Personal Projects</a>
+                             <a rel="noreferrer">Proyectos personales</a>
                         </Link> 
                     </li>
 

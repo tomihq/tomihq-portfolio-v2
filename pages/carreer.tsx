@@ -5,16 +5,14 @@ const Carreer: NextPage = () => {
    return(
     <div className='flex flex-col justify-center px-8'>
     <Layout 
-    title={'My Carreer as Software Engineer'}
+    title={'Mi camino como Software Engineer'}
     pageDescription={'Tomi Hernández Experience as a Software Engineer Page'}
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
             <div className='flex flex-col pr-8 md:w-9/12'>
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Software Engineer Experience</h1>
-                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>I even used a banana to create software <b className='text-black  dark:text-white'> ✨ </b></h2>
-                <span className='ml-1 text-gray-600 dark:text-white mb-8'>I've programmed in Haskell, C, Visual Basic, Java, PHP and currently TypeScript.
-
-
+                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Mi camino como Software Engineer</h1>
+                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Los lenguajes de programación son herramientas. ¿Lo que realmente importa? las bases. </h2>
+                <span className='ml-1 text-gray-600 dark:text-white mb-8'>Programé en Haskell, C, Visual Basic, Java, PHP y actualmente utilizo muy frecuentemente TypeScript.
                 </span>       
             </div>
             <div className='flex flex-col'>
@@ -29,7 +27,15 @@ const Carreer: NextPage = () => {
                     <div className='flex flex-col text-gray-800 dark:text-white gap-1'>
                         <span><span className='font-semibold dark:text-white'>Hobby:</span> 2010 using Scratch</span>
                         <span><span className='font-semibold dark:text-white'>Study:</span> 2016 learning Algorithms and Data Estructures at School</span>
-                        <span><span className='font-semibold dark:text-white'>Professional:</span> 2020 Freelance</span>
+                        <span className='font-semibold dark:text-white'>  Professional: </span>
+                        <ul className='flex flex-col gap-3 list-decimal px-4 text-sm'>
+                            <li className='break-words'>
+                                <span className='font-semibold'>Necxus Negocios Informáticos S.A.</span> - Ago. 2021 / Oct. 2022
+                            </li>
+                            <li className='break-words'>
+                                <span className='font-semibold'>GransLiving</span> - Sep. 2022 / Actualidad
+                            </li>
+                        </ul>
                     </div>
             </section>
 

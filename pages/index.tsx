@@ -37,7 +37,9 @@ const Home: NextPage = () => {
         <section className='flex flex-col-reverse border-gray-100 border-b-2  justify-between md:flex-row mb-6 dark:border-stone-600'>
           <div className='flex flex-col pr-8 md:w-9/12'>
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Tomás Hernández</h1>
+            
             <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Software Engineer at <b className='text-black dark:text-white'>Gransliving</b></h2>
+             
             <span className='text-gray-600 dark:text-gray-400 mb-4 px-1'>Amo hacer aplicaciones
               <b className="text-black dark:text-white"> escalables</b>,
               <b className="text-black dark:text-white"> <span>útiles</span> </b>  y
