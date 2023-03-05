@@ -12,8 +12,8 @@ const Projects = ({ projects, currentPage, totalProjects }: PageProps) => {
   return (
     <div className='flex flex-col justify-center px-8'>
         <Layout 
-        title={'Proyectos - Actualizado (' + new Date().getFullYear() + ')'}
-        pageDescription={'Página de proyectos de la página de tomihq'}
+        title={`Proyectos - Actualizado (${new Date().getFullYear()}) - Página ${currentPage}`}
+        pageDescription={`Página de proyectos de la página de tomihq - Página ${currentPage}`}
         imageFullUrl={'https://avatars.githubusercontent.com/u/72570859?s=400&u=49352445697d9e9b2cd7ff878022bb65c9bf50d3&v=4'}
         canonicalURL={'/projects'}
         robotsAction={'follow'}
