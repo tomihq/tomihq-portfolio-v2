@@ -92,5 +92,34 @@ export const PROJECTS:IProject[] = [
             }
          ]
     },
+    {   "slug": "design-patterns",
+        "title": "Design Patterns",
+        "description": "No description provided",
+        "tecnologies": [ "TypeScript", "JavaScript"],
+        "status": "in-progress",
+        "lastUpdate": "21 de Agosto de 2022",
+        "links": [
+            {
+                icon: 'github',
+                url: "https://github.com/tomihq/design-patterns",
+                ariaLabel: 'Enlace de GitHub al repositorio de Patrones de Diseño de tomihq'
+            }
+        ]
+    },
+    {
+        "slug": "tomihq_python",
+        "title": "Curso de Python - Meta",
+        "description": "Python guide for beginners - Meta Carreer",
+        "tecnologies": [ "Python"],
+        "status": "completed",
+        "lastUpdate": "3 de Septiembre de 2022",
+        "links": [
+            {
+                icon: 'github',
+                url: "https://github.com/tomihq/tomihq_python",
+                ariaLabel: 'Enlace de GitHub al repositorio de Python de tomihq'
+            }
+        ]
+    }
 
 ]
