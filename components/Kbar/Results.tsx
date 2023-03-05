@@ -20,9 +20,9 @@ const Results = () => {
 							active ? "bg-zinc-900 text-white " : "bg-transparent"
 						)}
 					>
-						<div className="flex items-center">
-							{item.icon && <div className="mr-4">{item.icon}</div>}
-							<span className="text-[15px]">{item.name}</span>
+						<div className="flex items-center  ">
+							{item.icon && <div className="mr-4  ">{item.icon}</div>}
+							<span className="text-[15px] ">{item.name}</span>
 						</div>
 					</div>
 				)

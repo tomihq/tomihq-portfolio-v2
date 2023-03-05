@@ -24,7 +24,7 @@ const Pagination = ({
         pageNumber === dotts ? (
           <span
             key={i}
-            className="px-4 py-2 rounded-full text-sm font-semibold text-black"
+            className="px-4 py-2 rounded-full text-sm font-semibold text-black dark:text-white"
           >
             {pageNumber}
           </span>
@@ -35,7 +35,7 @@ const Pagination = ({
             passHref
           >
             <a className={`${
-              pageNumber === currentPage ? 'text-gray-800 font-bold border-2 px-2 rounded-lg' : 'text-black px-2'
+              pageNumber === currentPage ? 'dark:text-white text-gray-800 font-bold border-2 px-2 rounded-lg' : ' dark:text-gray-400 text-black px-2'
             }  py-2 mx-1  text-base font-semibold no-underline`}>{pageNumber}</a>
           </Link>
         )
