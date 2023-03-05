@@ -1,15 +1,11 @@
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, NextPage } from "next"
+import { AvatarPicture,  } from "../../components/ui"
+import { GetStaticProps} from "next"
 import { Layout } from "../../components/layouts"
-import { AvatarPicture, ProjectCard } from "../../components/ui"
-import { IProject } from "../../interfaces";
+import { PageProps, PER_PAGE } from "../../types/";
 import {PROJECTS} from '../../utils/projects';
+import dynamic from 'next/dynamic';
 
-type PageProps = {
-  projects: any[]
-  currentPage: number
-  totalProjects: number
-}
-
+const PaginationPage = dynamic(() => import('../../components/Projects/PaginationPage'));
 
 const Projects = ({ projects, currentPage, totalProjects }: PageProps) => {
   return (
@@ -36,12 +32,15 @@ const Projects = ({ projects, currentPage, totalProjects }: PageProps) => {
 
         <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
         dark:border-stone-600 mb-2'>
-        <section className='flex flex-col gap-1 mb-7 '>
-          <div className="flex flex-col md:flex-row w-full flex-wrap justify-between ">
-              {projects.map((project: IProject) =>{
-                return <ProjectCard {...project} key={project.slug}  />
-              })}
-          </div>
+        <section className='flex flex-col gap-1 mb-7 w-full '>
+              {
+                    <PaginationPage
+                      projects={projects}
+                      currentPage={currentPage}
+                      totalProjects={totalProjects}
+                      perPage={PER_PAGE}
+                    />
+              }
         </section>
        </div>
        
@@ -59,7 +58,6 @@ const getProjects = ({limit, page}: {limit: number, page: number}) =>{
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const PER_PAGE = 4;
   const { projects, total } =  getProjects({ limit: PER_PAGE, page: 1 })
 
 

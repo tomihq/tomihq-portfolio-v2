@@ -27,6 +27,27 @@ export const PROJECTS:IProject[] = [
         ]
     },
     {
+        "slug": "react-compound-component-pattern",
+        "title": "React Compound Component Pattern",
+        "description": "React Compound Component Pattern in a basic example",
+        "tecnologies": ["ReactJS", "Vite", "TypeScript"],
+        "status": "completed",
+        "lastUpdate": "5 de Marzo de 2023",
+        "links": [
+            {
+                icon: 'github',  
+                ariaLabel: 'Enlace de GitHub al repositorio de Compound Component Pattern en ReactJS', 
+                url: "https://github.com/tomihq/tomihq-react-advanced/tree/compound-component-pattern"
+            },
+            {
+                icon: 'link',  
+                ariaLabel: 'Enlace de la web del proyecto de Compound Component Pattern en ReactJS', 
+                url: "https://tomihq-compound-components-pattern.netlify.app/"
+            },
+
+        ]
+    },
+    {
         "slug": "next-ecommerce",
         "title": "Commerce",
         "description": "E-Commerce",
