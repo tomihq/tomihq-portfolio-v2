@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import { Layout } from '../components/layouts'
 import { AvatarPicture } from '../components/ui/'
@@ -7,12 +8,15 @@ const Carreer: NextPage = () => {
     <Layout 
     title={'Mi camino como Software Engineer'}
     pageDescription={'Tomi Hernández Experience as a Software Engineer Page'}
+    imageFullUrl={'https://avatars.githubusercontent.com/u/72570859?s=400&u=49352445697d9e9b2cd7ff878022bb65c9bf50d3&v=4'}
+    canonicalURL={'/carreer'}
+    robotsAction={'follow'}
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
             <div className='flex flex-col pr-8 md:w-9/12'>
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Mi camino como Software Engineer</h1>
-                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Los lenguajes de programación son herramientas. ¿Lo que realmente importa? las bases. </h2>
-                <span className='ml-1 text-gray-600 dark:text-white mb-8'>Programé en Haskell, C, Visual Basic, Java, PHP y actualmente utilizo muy frecuentemente TypeScript.
+                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Los lenguajes de programación son herramientas. ¿Lo que realmente importa? por solo mencionar los más importantes, la lógica y los algoritmos y estructuras de datos. </h2>
+                <span className='ml-1 text-gray-600 dark:text-white mb-8'>Programé en Haskell, C, Visual Basic, Java, PHP y actualmente con mucha frecuencia en TypeScript.
                 </span>       
             </div>
             <div className='flex flex-col'>
@@ -20,6 +24,10 @@ const Carreer: NextPage = () => {
             </div>
         </section>
     
+    <motion.div  
+        initial={{ opacity: 0, y: -12 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.6 }}>
        <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
     dark:border-stone-600 mb-2'>
         <section className='flex flex-col gap-1 mb-7 md:w-1/3'>
@@ -74,7 +82,8 @@ const Carreer: NextPage = () => {
             </section>
 
        </div>
-
+    </motion.div>
+       
     </Layout>
 
     </div>

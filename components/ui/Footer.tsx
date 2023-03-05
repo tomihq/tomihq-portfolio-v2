@@ -13,11 +13,7 @@ export const Footer = () => {
             <div className="flex flex-col w-6/12 md:w-4/12 gap-y-1">
                 <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Social Media</h3>
                 <ul className="text-gray-800 text-sm dark:text-gray-400">
-                    <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://twitter.com/ttomihq" passHref>
-                             <a target={'_blank'} rel="noreferrer">Twitter</a>
-                        </Link> 
-                    </li>
+                   
                     <li className="mb-1 text-xl md:text-base">
                         <Link href="https://github.com/tomihq" passHref >
                              <a target={'_blank'} rel="noreferrer">GitHub</a>
@@ -41,11 +37,7 @@ export const Footer = () => {
                             <a target={'_blank'} rel="noreferrer">Email</a>
                         </Link>
                     </li>
-                    <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://twitter.com/ttomihq" passHref>
-                            <a target={'_blank'} rel="noreferrer">Twitter DM</a>
-                        </Link>
-                    </li>
+                    
                     
                 </ul> 
             </div>

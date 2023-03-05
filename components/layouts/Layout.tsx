@@ -7,38 +7,49 @@ interface Props {
     title: string;
     pageDescription: string;
     imageFullUrl?: string;
+    canonicalURL?: string;
+    robotsAction?: 'noindex, follow' | 'follow'
 }
 
-export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescription, imageFullUrl }) => {
+export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescription, imageFullUrl, canonicalURL, robotsAction = 'follow'}    ) => {
   return (
     <>
-        <Head>
-            <title>{title}</title>
+           <Head>
+            <title>{title + ' | Tomás Hernández'   }</title>
+            <meta property="og:site_name" content="Portfolio de Tomás Hernández"/> 
             <meta name="description" content={pageDescription}/>
-            <meta name="og:title" content={title}/>
+            <meta name="og:title" content={title + ' | tomihq'}/>
             <meta name="og:description" content={pageDescription}/>
+            <meta name="twitter:title" content={title}/> 
+            <meta name="twitter:description" content={pageDescription}/> 
             {
                 imageFullUrl && (
-                    <meta name="og:image" content={imageFullUrl}/>   
+                   <>
+                     <meta name="twitter:image" content={imageFullUrl}/> 
+                     <meta name="og:image" content={imageFullUrl}/>   
+                   </>
                 )
             }
+            {
+              canonicalURL && (
+                <link rel="canonical" href={canonicalURL}/>
+              )
+            }
+            
+            
+            <meta name="robots" content={robotsAction}></meta>
         </Head>
 
         <nav>
              <Navbar/>
         </nav>
 
-        <motion.div  
-            initial={{ opacity: 0, y: -25 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.7 }}>
         <main className='
                  max-w-4xl border-gray-200 mx-auto pt-8 pb-8 
                  sm:pb-0 bg-opacity-60 dark:text-gray-100'>
             {children}
         </main>
-       </motion.div>
-       
+      
       <footer>
             <Footer/>
       </footer> 

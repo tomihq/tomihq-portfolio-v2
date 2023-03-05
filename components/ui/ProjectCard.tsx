@@ -38,10 +38,8 @@ export const ProjectCard = (data: IProject  ) => {
                                 <List list={tecnologies}>
                                   <FiberManualRecordOutlinedIcon className='scale-50'/>
                                 </List>
-                            
                             </div>
                           
-                            
                       </div>
                 </Card>
     </div>

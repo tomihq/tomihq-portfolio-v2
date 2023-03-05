@@ -5,6 +5,7 @@ import { keyframes } from "styled-components";
 import Link from 'next/link';
 import { Button } from '../components/ui/Button';
 import { AvatarPicture } from '../components/ui/AvatarPicture';
+import { motion } from 'framer-motion';
 const Home: NextPage = () => {
 
 
@@ -31,8 +32,11 @@ const Home: NextPage = () => {
   return (
     <div className='flex flex-col justify-center px-8'>
       <Layout
-        title={'Home Page'}
+        title={'Portfolio'}
         pageDescription={'Tomi Hernández Portfolio Home Page'}
+        imageFullUrl={'https://avatars.githubusercontent.com/u/72570859?s=400&u=49352445697d9e9b2cd7ff878022bb65c9bf50d3&v=4'}
+        canonicalURL={'/'}
+        robotsAction={'follow'}
       >
         <section className='flex flex-col-reverse border-gray-100 border-b-2  justify-between md:flex-row mb-6 dark:border-stone-600'>
           <div className='flex flex-col pr-8 md:w-9/12'>
@@ -81,44 +85,49 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className='mb-4'>
-           <h3 className='font-bold text-2xl text-black dark:text-white pr-8 mb-3 block'>Contacto</h3>
-            <div className='flex flex-column'>
-                <div>
-                  <span>
-                    ¿Quieres contactarme por trabajo y/o discutir algunas ideas que tengas en mente?
-                    Sentite libre de contactarme vía
-                      <AnimatedGradientText> <b>
-                        <Link href="mailto:hernandeztomas584@gmail.com">
-                          <a>  email</a>
-                        </Link>
-                        </b>
-                      </AnimatedGradientText>.
-                    <br />
+        <motion.div  
+            initial={{ opacity: 0, y: -25 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}>
+            <section className='mb-4'>
+                      <h3 className='font-bold text-2xl text-black dark:text-white pr-8 mb-3 block'>Contacto</h3>
+                        <div className='flex flex-column'>
+                            <div>
+                              <span>
+                                ¿Quieres contactarme por trabajo y/o discutir algunas ideas que tengas en mente?
+                                Sentite libre de contactarme vía
+                                  <AnimatedGradientText> <b>
+                                    <Link href="mailto:hernandeztomas584@gmail.com">
+                                      <a>  email</a>
+                                    </Link>
+                                    </b>
+                                  </AnimatedGradientText>.
+                                <br />
 
-                    También podés encontrarme en 
-                    <AnimatedGradientText> 
-                        <b>
-                          <Link href="https://www.linkedin.com/in/tomihq/">
-                            <a> LinkedIn</a>
-                          </Link>
-                        </b>
-                    </AnimatedGradientText>.
-                  </span>
+                                También podés encontrarme en 
+                                <AnimatedGradientText> 
+                                    <b>
+                                      <Link href="https://www.linkedin.com/in/tomihq/">
+                                        <a> LinkedIn</a>
+                                      </Link>
+                                    </b>
+                                </AnimatedGradientText>.
+                              </span>
 
-                </div>
-            </div>
-            <Button
-                  buttonClasses='border border-gray-700 bg-black text-white  rounded-md mt-4 px-4 py-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline dark:bg-white dark:border-neutral-400 dark:hover:bg-gray-800
-                  text-black dark:text-black dark:hover:text-white'
-                  
-                >
-                 <Link href="files/cv.pdf" passHref>
-                      <a target="_blank" download="Tomás Hernández CV"> Download CV </a>
-                    </Link>
-            </Button>
+                            </div>
+                        </div>
+                        <Button
+                              buttonClasses='border border-gray-700 bg-black text-white  rounded-md mt-4 px-4 py-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline dark:bg-white dark:border-neutral-400 dark:hover:bg-gray-800
+                              text-black dark:text-black dark:hover:text-white'
+                              
+                            >
+                            <Link href="files/cv.pdf" passHref>
+                                  <a target="_blank" download="Tomás Hernández CV"> Download CV </a>
+                                </Link>
+                        </Button>
 
-        </section>
+                    </section>
+        </motion.div>
 
       </Layout>
 

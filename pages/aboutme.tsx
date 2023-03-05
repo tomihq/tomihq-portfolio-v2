@@ -3,6 +3,7 @@ import { Layout } from '../components/layouts'
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { AvatarPicture } from '../components/ui/';
+import { motion } from 'framer-motion';
 const AboutMe: NextPage = () => {
     const hue = keyframes`
     from {
@@ -12,22 +13,12 @@ const AboutMe: NextPage = () => {
       -webkit-filter: hue-rotate(-360deg);
     }
    `;
-   const AnimatedGradientText = styled.span`
-     color: #4f46e5;
-     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     -webkit-animation: ${hue} 10s infinite linear;
-     overflow-wrap: break-word;
-     text-align: center;
-     text-rendering: optimizelegibility;
-     -moz-osx-font-smoothing: grayscale;
-   `;
+ 
 
    return(
     <div className='flex flex-col justify-center px-8'>
     <Layout 
-    title={'Proyects Page'}
+    title={'Acerca de mí'}
     pageDescription={'Tomi Hernández Portfolio Proyects Page'}
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
@@ -41,6 +32,11 @@ const AboutMe: NextPage = () => {
                 <AvatarPicture/>
             </div>
         </section>
+
+    <motion.div  
+      initial={{ opacity: 0, y: -12 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6 }}>
     
        <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
     dark:border-stone-600 mb-2'>
@@ -88,7 +84,7 @@ const AboutMe: NextPage = () => {
                 </div>
             </section>
        </div>
-
+    </motion.div>
     </Layout>
 
     </div>
