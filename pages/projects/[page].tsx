@@ -4,6 +4,7 @@ import { Layout } from "../../components/layouts"
 import { PageProps, PER_PAGE } from "../../types";
 import {PROJECTS} from '../../utils/projects';
 import dynamic from 'next/dynamic';
+import { motion } from "framer-motion";
 
 const PaginationPage = dynamic(() => import('../../components/Projects/PaginationPage'));
 
@@ -29,22 +30,26 @@ const Projects = ({ projects, currentPage, totalProjects }: PageProps) => {
                     <AvatarPicture/>
                 </div>
         </section>
-
-        <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
-        dark:border-stone-600 mb-2'>
-        <section className='flex flex-col gap-1 mb-7 w-full '>
-              {               
-                  <PaginationPage
-                    projects={projects}
-                    currentPage={currentPage}
-                    totalProjects={totalProjects}
-                    perPage={PER_PAGE}
-                />
-                
-              }
-        </section>
-       </div>
-       
+        
+        <motion.div  
+          initial={{ opacity: 0, y: -12 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.6 }}>
+            <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
+            dark:border-stone-600 mb-2'>
+            <section className='flex flex-col gap-1 mb-7 w-full '>
+                  {               
+                      <PaginationPage
+                        projects={projects}
+                        currentPage={currentPage}
+                        totalProjects={totalProjects}
+                        perPage={PER_PAGE}
+                    />
+                    
+                  }
+            </section>
+          </div>
+       </motion.div>
 
    </Layout>
   

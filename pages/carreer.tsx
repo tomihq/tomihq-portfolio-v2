@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import { Layout } from '../components/layouts'
 import { AvatarPicture } from '../components/ui/'
@@ -23,6 +24,10 @@ const Carreer: NextPage = () => {
             </div>
         </section>
     
+    <motion.div  
+        initial={{ opacity: 0, y: -12 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.6 }}>
        <div className='flex flex-col gap-2 justify-between flex-wrap md:flex-row border-gray-100 border-b-2
     dark:border-stone-600 mb-2'>
         <section className='flex flex-col gap-1 mb-7 md:w-1/3'>
@@ -77,7 +82,8 @@ const Carreer: NextPage = () => {
             </section>
 
        </div>
-
+    </motion.div>
+       
     </Layout>
 
     </div>

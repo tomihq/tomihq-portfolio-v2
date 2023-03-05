@@ -44,17 +44,12 @@ export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescr
              <Navbar/>
         </nav>
 
-        <motion.div  
-            initial={{ opacity: 0, y: -25 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.7 }}>
         <main className='
                  max-w-4xl border-gray-200 mx-auto pt-8 pb-8 
                  sm:pb-0 bg-opacity-60 dark:text-gray-100'>
             {children}
         </main>
-       </motion.div>
-       
+      
       <footer>
             <Footer/>
       </footer> 
