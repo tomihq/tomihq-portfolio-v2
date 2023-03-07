@@ -4,7 +4,7 @@
 
 @layer base{
   body{
-    @apply dark:bg-black; 
+    @apply dark:bg-black dark:bg-[url('/static/img/upper-gradient.svg')] dark:bg-no-repeat ;
    
   }
 }

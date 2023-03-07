@@ -23,9 +23,9 @@ const AboutMe: NextPage = () => {
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
             <div className='flex flex-col pr-8 md:w-9/12'>
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Acerca de mí</h1>
-                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>¡Feliz de tenerte aquí, my friend! <b className='text-black  dark:text-white'>Here we go... ✨ </b></h2>
-                <span className='ml-1 text-gray-600 dark:text-gray-400 mb-8'>There is   <b className="text-black dark:text-white"> always something to optimize</b>, nothing is perfect.  <b className="text-black dark:text-white"> Think big when developing. </b>
+                <h1 className="font-bold text-4xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Acerca de mí</h1>
+                <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>¡Feliz de tenerte aquí, my friend! <b className='text-black  dark:text-white font-semibold'>Here we go... ✨ </b></h2>
+                <span className='ml-1 text-gray-600 dark:text-gray-400 mb-8'>There is   <b className="text-black dark:text-white font-semibold"> always something to optimize</b>, nothing is perfect.  <b className="text-black dark:text-white font-semibold"> Think big when developing. </b>
                 </span>       
             </div>
             <div className='flex flex-col'>
@@ -60,13 +60,13 @@ const AboutMe: NextPage = () => {
                 <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Aprendizaje</h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-gray-400'>
                         <ol>
-                                <li>Soy <b className='text-black dark:text-white'>egresado</b>  de una      
-                                <b className=' text-black dark:text-white'> Escuela Técnica orientada a Computación</b>. </li>
-                                <li className='text-black dark:text-white'> Estudiante de Ciencias de la Computación en la <strong>Universidad de Buenos Aires</strong> (UBA).</li>
-                                <li>Leo <b className=' text-black dark:text-white'>documentación</b></li>
-                                <li>Leo <b className='text-black dark:text-white'>libros</b> acerca de desarrollo de Software.</li>
-                                <li>Cursos en <b className='text-black dark:text-white'>Udemy</b>.</li>
-                                <li>Cursos en <b className='text-black dark:text-white'>Platzi</b>.</li>
+                                <li>Soy <b className='text-black dark:text-white font-semibold'>egresado</b>  de una      
+                                <b className=' text-black dark:text-white font-semibold'> Escuela Técnica orientada a Computación</b>. </li>
+                                <li className='text-black dark:text-white font-semibold'> Estudiante de Ciencias de la Computación en la <strong className='font-semibold'>Universidad de Buenos Aires</strong> (UBA).</li>
+                                <li>Leo <b className=' text-black dark:text-white font-semibold'>documentación</b></li>
+                                <li>Leo <b className='text-black dark:text-white font-semibold'>libros</b> acerca de desarrollo de Software.</li>
+                                <li>Cursos en <b className='text-black dark:text-white font-semibold'>Udemy</b>.</li>
+                                <li>Cursos en <b className='text-black dark:text-white font-semibold'>Platzi</b>.</li>
                                 
                         </ol>
                 </div>
