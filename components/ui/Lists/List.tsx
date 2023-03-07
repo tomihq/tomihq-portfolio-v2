@@ -1,10 +1,10 @@
 interface IList {
     list: string[]
     listStyles?: string;
-    children: any;
+    children?: any;
 }
 
-const List = ({list, listStyles = 'flex flex-col    ', children}: IList) => {
+const List = ({list, listStyles = 'flex flex-col', children}: IList) => {
   return (
     <ul className={listStyles}>
         {
