@@ -32,7 +32,7 @@ export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescr
             }
             {
               canonicalURL && (
-                <link rel="canonical" href={canonicalURL}/>
+                <link rel="canonical" href={'https://tomihq-portfolio-v2.vercel.app' +canonicalURL}/>
               )
             }
             
