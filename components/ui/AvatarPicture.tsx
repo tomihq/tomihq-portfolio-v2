@@ -2,7 +2,7 @@ import {AVATAR} from '../../assets/img';
 import Image from 'next/image'
 export const AvatarPicture = () =>{
     return(
-        <section>
+        <section className='pb-4'>
             <Image
                 src={AVATAR.src}
                 className='filter grayscale rounded-full max-h-32'
