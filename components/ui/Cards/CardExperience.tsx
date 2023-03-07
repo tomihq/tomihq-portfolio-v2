@@ -61,7 +61,7 @@ export const CardExperience = ({business}:ICardExperience) => {
 
             {
                 business.periods.length > 1 && (
-                   <section className='self-start mb-4 sm:self-end md:mb-0 flex flex-row gap-4 relative'>
+                   <section className='self-start mt-4 md:mt-0 mb-4 sm:self-end md:mb-0 flex flex-row gap-4 relative'>
                     <NextPeriodButton handleIncrementPeriod={handleIncrementPeriod} >
                         <span className='text-black dark:text-white'>{period === business.periods.length-1?'Rol Actual':'Rol Anterior'}</span>
                         <NextPeriodArrow />
