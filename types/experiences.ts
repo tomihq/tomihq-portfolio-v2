@@ -4,7 +4,10 @@ export interface IBusiness {
     name: string;
     url: string;
     periods: IBusinessPeriods[]
-    images: StaticImageData[]
+    images: {
+        url: StaticImageData;
+        alt: string;
+    }[]
 } 
 
 export interface IBusinessPeriods {

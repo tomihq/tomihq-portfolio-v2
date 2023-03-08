@@ -1,6 +1,6 @@
 import 'animate.css';
 import { Card } from './Card';
-import { IBusiness } from '../../../types/experiences';
+import { IBusiness } from '../../../types/';
 import { motion } from 'framer-motion';
 import { NextPeriodArrow, NextPeriodButton } from './NextPeriod';
 import Image from 'next/image';
@@ -23,12 +23,16 @@ export const CardExperience = ({business}:ICardExperience) => {
     )
     
     return (
-        <Card cardStyles={'h-full md:h-[22rem]  pt-8 md:pt-0 !border-0 '} childrenCardStyle={'!px-0 dark:bg-black  '}>
+        <Card cardStyles={'h-full md:h-[22rem]  pt-0 !border-0 '} childrenCardStyle={'!px-0 dark:bg-black  '}>
                 <Link href={business.url}>
-                    <a target={'_blank'}  className='relative w-14 h-14 hover:scale-150 duration-300 !transition-all'>
+                    <a 
+                        target={'_blank'}  
+                        aria-label={`Enlace que redirecciona a la web de ${business.name}`}
+                        className='relative w-14 h-14 hover:scale-150 duration-300 !transition-all'>
                         <Image
-                            src={business.images[0]}
+                            src={business.images[0].url}
                             onError={() => business.images[1]}
+                            alt={business.images[0].alt}
                             layout={'fill'}
                             objectFit={'cover'}
                             className='rounded-full'
