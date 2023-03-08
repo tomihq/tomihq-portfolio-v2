@@ -48,6 +48,27 @@ export const PROJECTS:IProject[] = [
         ]
     },
     {
+        "slug": "react-extensible-styles",
+        "title": "React Extensible Styles Pattern",
+        "description": "React Extensible Styles Pattern in a basic example",
+        "tecnologies": ["ReactJS", "Vite", "TypeScript"],
+        "status": "completed",
+        "lastUpdate": "7 de Marzo de 2023",
+        "links": [
+            {
+                icon: 'github',  
+                ariaLabel: 'Enlace de GitHub al repositorio de Compound Component Pattern en ReactJS', 
+                url: "https://github.com/tomihq/tomihq-react-advanced/tree/extensible-styles"
+            },
+            {
+                icon: 'link',  
+                ariaLabel: 'Enlace de la web del proyecto de Compound Component Pattern en ReactJS', 
+                url: "https://tomihq-extensible-styles-pattern.netlify.app/"
+            },
+
+        ]
+    },
+    {
         "slug": "next-ecommerce",
         "title": "Commerce",
         "description": "E-Commerce",
