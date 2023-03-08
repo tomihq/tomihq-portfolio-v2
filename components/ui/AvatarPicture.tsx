@@ -9,7 +9,7 @@ export const AvatarPicture = () =>{
                 alt="Tomás Hernández Picture"
                 width={128}
                 height={128}
-            
+                priority={true}
            />
         </section>
     )
