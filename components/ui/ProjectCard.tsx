@@ -30,7 +30,7 @@ export const ProjectCard = (data: IProject  ) => {
                       )
                     }
                     
-                    <h3 className="text-black dark:text-white text-2xl font-semibold mt-3">{title}</h3>
+                    <h3 className="text-black dark:text-white text-xl md:text-2xl font-semibold mt-3">{title}</h3>
                     
                       <div className={`back-card  flex flex-col `} >
                             <div className="text-black dark:text-white ">

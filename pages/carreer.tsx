@@ -14,7 +14,7 @@ const Carreer: NextPage = () => {
     >
         <section className='flex flex-col-reverse justify-between md:flex-row border-gray-100 border-b-2 mb-6 dark:border-stone-600'>
             <div className='flex flex-col pr-8 md:w-9/12'>
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Mi camino como Software Engineer</h1>
+                <h1 className="font-bold text-4xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Mi camino como Software Engineer</h1>
                 <h2 className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Los lenguajes de programación son herramientas. ¿Lo que realmente importa? por solo mencionar los más importantes, la lógica y los algoritmos y estructuras de datos. </h2>
                 <span className='ml-1 text-gray-600 dark:text-white mb-8'>Programé en Haskell, C, Visual Basic, Java, PHP y actualmente con mucha frecuencia en TypeScript.
                 </span>       
