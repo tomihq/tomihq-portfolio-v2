@@ -12,7 +12,7 @@ export const EXPERIENCES:IBusiness[] = [
                 tecnologies: ['PHP', 'JavaScript', 'JQuery', 'AJAX', 'MySQL']
             }
         ],
-        images: [NECXUSWEBP, NECXUSWEBP]
+        images: [{url: NECXUSWEBP, alt: 'Logo de Necxus'}, {url: NECXUSPNG, alt: 'Logo de Necxus'}]
    
 
     },
@@ -32,7 +32,7 @@ export const EXPERIENCES:IBusiness[] = [
                 tecnologies: ['Express', 'NodeJS', 'TypeScript', 'MongoDB', 'GitHub']
             },
         ],
-        images: [GRANSLIVINGWEBP, GRANSLIVINGPNG]
+        images: [{url: GRANSLIVINGWEBP, alt: 'Logo de Gransliving'}, {url: GRANSLIVINGPNG, alt: 'Logo de Gransliving'}]
    
 
     }
