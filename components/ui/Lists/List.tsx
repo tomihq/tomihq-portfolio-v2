@@ -1,3 +1,4 @@
+'use client';
 interface IList {
     list: string[]
     listStyles?: string;

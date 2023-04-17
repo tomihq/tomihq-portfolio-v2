@@ -1,3 +1,4 @@
+'use client';
 import {ReactElement} from 'react';
 interface CardProps {
   children?: React.ReactNode

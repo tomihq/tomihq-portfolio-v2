@@ -1,6 +1,8 @@
+'use client';
+
 import {AVATAR} from '../../assets/img';
 import Image from 'next/image'
-export const AvatarPicture = () =>{
+const AvatarPicture = () =>{
     return(
         <section className='pb-4'>
             <Image
@@ -14,3 +16,5 @@ export const AvatarPicture = () =>{
         </section>
     )
 }
+
+export default AvatarPicture;

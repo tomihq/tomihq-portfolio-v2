@@ -1,3 +1,4 @@
+'use client';
 import {ReactElement} from 'react';
 interface CardGradientProps {
   children?: React.ReactNode

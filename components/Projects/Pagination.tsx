@@ -32,11 +32,12 @@ const Pagination = ({
           <Link
             key={i}
             href={renderPageLink(pageNumber as number)}
+            className={`${
+              pageNumber === currentPage ? 'dark:text-white text-gray-800 font-bold border-2 px-2 rounded-lg' : ' dark:text-gray-400 text-black px-2'
+            }  py-2 mx-1  text-base font-semibold no-underline`}
             passHref
           >
-            <a className={`${
-              pageNumber === currentPage ? 'dark:text-white text-gray-800 font-bold border-2 px-2 rounded-lg' : ' dark:text-gray-400 text-black px-2'
-            }  py-2 mx-1  text-base font-semibold no-underline`}>{pageNumber}</a>
+            {pageNumber}
           </Link>
         )
       )}

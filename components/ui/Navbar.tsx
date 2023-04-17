@@ -1,10 +1,11 @@
+'use client';
 import { useKBar } from 'kbar';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname, useRouter } from 'next/navigation';
 import Settings from '../../assets/svg/Settings';
 import { SideMenu } from './SideMenu';
 export const Navbar = () => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   const { query } = useKBar()
 
@@ -16,20 +17,20 @@ export const Navbar = () => {
       sm:pb-4 bg-opacity-60 dark:text-gray-100'>
       <SideMenu />
       <section className='ml-[-0.60rem]'>
-        <Link href="/" passHref>
-          <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname == '/' ? 'text-black font-semibold' : 'text-gray-700'}`}>Home</a>
+        <Link href="/" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname == '/' ? 'text-black font-semibold' : 'text-gray-700'}`} passHref>
+          Home
         </Link>
 
-        <Link href="/projects" passHref>
-          <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname == '/projects' ? 'text-black font-semibold' : 'text-gray-700'}`}>Proyectos</a>
+        <Link href="/projects" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname == '/projects' ? 'text-black font-semibold' : 'text-gray-700'}`} passHref>
+           Proyectos
         </Link>
 
-        <Link href="/aboutme" passHref>
-          <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname == '/aboutme' ? 'text-black font-semibold' : 'text-gray-700'}`}>Acerca de mí</a>
+        <Link href="/aboutme" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname == '/aboutme' ? 'text-black font-semibold' : 'text-gray-700'}`} passHref>
+          Acerca de mí
         </Link>
 
-        <Link href="/carreer" passHref>
-          <a className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname == '/carreer' ? 'text-black font-semibold' : 'text-gray-700'}`}>Mi camino como Software Engineer</a>
+        <Link href="/carreer" className={`dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname == '/carreer' ? 'text-black font-semibold' : 'text-gray-700'}`} passHref>
+          Mi camino como Software Engineer
         </Link>
       </section>
 

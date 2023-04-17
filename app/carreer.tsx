@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import { Layout } from '../components/layouts'
-import { AvatarPicture } from '../components/ui/'
+import AvatarPicture from '../components/ui/AvatarPicture'
 const Carreer: NextPage = () => {
    return(
     <div className='flex flex-col justify-center px-8'>

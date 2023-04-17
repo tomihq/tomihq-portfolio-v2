@@ -1,9 +1,10 @@
+'use client';
 import { NextPage } from 'next'
-import { Layout } from '../components/layouts'
+import { Layout } from '../../components/layouts'
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import { AvatarPicture } from '../components/ui/';
 import { motion } from 'framer-motion';
+import AvatarPicture from '../../components/ui/AvatarPicture';
 const AboutMe: NextPage = () => {
     const hue = keyframes`
     from {

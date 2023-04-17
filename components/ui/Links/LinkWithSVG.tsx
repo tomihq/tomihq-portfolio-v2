@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import React from 'react'
 import { GitHubIcon, Link as LinkSVG } from '../../../assets';
@@ -23,10 +24,8 @@ const icons:Icons[] = [
 export const LinkWithSVG = ({url, icon, ariaLabel}:ILinkWithSVG) => {
 
   return (
-    <Link href={url} passHref >
-        <a aria-label={ariaLabel} className='w-fit'> 
+    <Link href={url}  aria-label={ariaLabel} className='w-fit' passHref >
            {icons.find((value) => { return value.id === icon})?.component}
-        </a>
     </Link>
   )
 }

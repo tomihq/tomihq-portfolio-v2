@@ -1,3 +1,4 @@
+'use client';
 import { Action, KBarAnimator, KBarPortal, KBarPositioner, KBarProvider, KBarSearch } from "kbar"
 import Results from "./Results"
 

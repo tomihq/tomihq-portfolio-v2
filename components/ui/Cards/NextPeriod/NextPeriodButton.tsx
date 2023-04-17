@@ -1,5 +1,6 @@
+'use client';
 import React from "react";
-import { Button } from "../../Button";
+import Button from "../../Button";
 
 interface INextPeriodButton{
     children: React.ReactElement | React.ReactElement[]

@@ -1,3 +1,5 @@
+'use client';
+
 import {ReactElement} from 'react';
 interface ButtonProps {
     children?: React.ReactNode
@@ -5,7 +7,7 @@ interface ButtonProps {
     onClick?: any;
 }
 
-export const Button = ({children, buttonClasses, onClick = null}:ButtonProps):ReactElement => {
+const Button = ({children, buttonClasses, onClick = null}:ButtonProps):ReactElement => {
     return(
         <button
                   type="button"
@@ -18,3 +20,5 @@ export const Button = ({children, buttonClasses, onClick = null}:ButtonProps):Re
                 </button>
     )
 }
+
+export default Button;

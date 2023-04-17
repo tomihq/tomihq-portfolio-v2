@@ -1,7 +1,8 @@
+'use client';
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import Link from "next/link"
-import { Button } from "../../ui"
+import Button from "../../ui/Button";
 
 const ContactSection = () => {
     const hue = keyframes`
@@ -35,17 +36,17 @@ const ContactSection = () => {
                 Sentite libre de contactarme vía
                     <AnimatedGradientText> <b>
                     <Link href="mailto:hernandeztomas584@gmail.com">
-                        <a>  email</a>
+                        email
                     </Link>
                     </b>
                     </AnimatedGradientText>.
                 <br />
 
-                También podés encontrarme en 
+                También podés encontrarme en  
                 <AnimatedGradientText> 
                     <b>
-                        <Link href="https://www.linkedin.com/in/tomihq/">
-                        <a> LinkedIn</a>
+                        <Link href="https://www.linkedin.com/in/tomihq/" className="ml-1">
+                            LinkedIn
                         </Link>
                     </b>
                 </AnimatedGradientText>.
@@ -58,8 +59,8 @@ const ContactSection = () => {
                 text-black dark:text-black dark:hover:text-white'
                 
             >
-            <Link href="files/cv.pdf" passHref>
-                    <a target="_blank" download="Tomás Hernández CV"> Download CV </a>
+            <Link href="files/cv.pdf" passHref target="_blank" download="Tomás Hernández CV">
+                    Download CV 
                 </Link>
         </Button>
 

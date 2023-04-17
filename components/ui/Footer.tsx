@@ -1,3 +1,4 @@
+'use client';
 import Link from "next/link"
 export const Footer = () => {
   return (
@@ -15,14 +16,14 @@ export const Footer = () => {
                 <ul className="text-gray-800 text-sm dark:text-gray-400">
                    
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://github.com/tomihq" passHref >
-                             <a target={'_blank'} rel="noreferrer">GitHub</a>
+                        <Link href="https://github.com/tomihq" passHref target={'_blank'} rel="noreferrer">
+                             GitHub
                         </Link> 
                     </li>
 
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref>
-                             <a target={'_blank'} rel="noreferrer">Spotify</a>
+                        <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref target={'_blank'} rel="noreferrer">
+                             Spotify
                         </Link> 
                     </li>
 
@@ -33,8 +34,8 @@ export const Footer = () => {
                <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Contáctame</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400">
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="mailto:hernandeztomas584@gmail.com" passHref>
-                            <a target={'_blank'} rel="noreferrer">Email</a>
+                        <Link href="mailto:hernandeztomas584@gmail.com" passHref target={'_blank'} rel="noreferrer">
+                            Email
                         </Link>
                     </li>
                     
@@ -46,18 +47,18 @@ export const Footer = () => {
                <h3 className="font-bold text-md text-black dark:text-white text-2xl md:text-lg">Acerca de mi futuro</h3>
                <ul className="text-gray-800 text-sm dark:text-gray-400" >
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="/aboutme" passHref>
-                             <a rel="noreferrer">Académico</a>
+                        <Link href="/aboutme" passHref rel="noreferrer">
+                             Académico
                         </Link> 
                     </li>
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="/carreer" passHref>
-                             <a rel="noreferrer">Mi camino como Software Engineer</a>
+                        <Link href="/carreer" passHref rel="noreferrer">
+                            Mi camino como Software Engineer
                         </Link> 
                     </li>
                     <li className="mb-1 text-xl md:text-base">
-                        <Link href="/projects" passHref>
-                             <a rel="noreferrer">Proyectos personales</a>
+                        <Link href="/projects" passHref rel="noreferrer">
+                             Proyectos personales
                         </Link> 
                     </li>
 

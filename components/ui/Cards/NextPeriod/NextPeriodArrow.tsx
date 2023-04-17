@@ -1,3 +1,4 @@
+'use client';
 import { ArrowForwardIcon, } from '../../../../assets';
 
 export const NextPeriodArrow = () =>{

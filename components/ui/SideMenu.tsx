@@ -1,9 +1,10 @@
+'use client';
 import Link from "next/link";
 import { useState } from "react"
-import {useRouter} from 'next/router';
+import {usePathname, useRouter} from 'next/navigation';
 
 export const SideMenu = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const [openSideMenu, setOpenSideMenu] = useState<boolean>(false);
   const handleOpenSideMenu = () =>{
     setOpenSideMenu(!openSideMenu);
@@ -35,26 +36,26 @@ export const SideMenu = () => {
         <div className="flex flex-col px-4">
           <ul className="flex flex-col gap-2">
           <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
-            <Link href="/" passHref >
-              <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/'?'text-black font-semibold':'text-gray-700'}`}>Home</a>
+            <Link href="/" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname=='/'?'text-black font-semibold':'text-gray-700'}`} passHref >
+              Home
             </Link>
           </li>
 
         <li className='border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1'  onClick={() => handleOpenSideMenu()}>
-          <Link href="/projects" passHref >
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`}>Proyectos</a>
+          <Link href="/projects" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname=='/proyects'?'text-black font-semibold':'text-gray-700'}`} passHref >
+              Proyectos
             </Link>
         </li>
         
         <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
-          <Link href="/aboutme" passHref>
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`}>Acerca de mí</a>
+          <Link href="/aboutme" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname=='/aboutme'?'text-black font-semibold':'text-gray-700'}`} passHref>
+            Acerca de mí
           </Link>
         </li>
 
         <li className="border-gray-100 border-b-2 dark:border-stone-600 mb-3 pb-1"  onClick={() => handleOpenSideMenu()}>
-          <Link href="/carreer" passHref>
-            <a href="" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${router.pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`}>Mi camino como Software Engineer</a>
+          <Link href="/carreer" className={`dark:text-gray-200  md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${pathname=='/carreer'?'text-black font-semibold':'text-gray-700'}`} passHref>
+              Mi camino como Software Engineer
           </Link>
         </li>
           </ul>

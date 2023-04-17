@@ -1,3 +1,4 @@
+'use client';
 import { CardExperience } from '../../ui';
 import { EXPERIENCES } from '../../../utils'
 import { IBusiness } from '../../../types/experiences';
@@ -25,8 +26,8 @@ const ExperienceSection = () => {
 
         </div>
         <h3 className='text-center mb-6  '>
-          <Link href={'/carreer'}>
-            <a className='text-center text-xl md:text-2xl font-semibold ' target={'_blank'} aria-label='Enlace que redirige a página que cuenta acerca de la experiencia de Tomás Hernández'> Ver más <KeyboardDoubleArrowRightIcon/> </a>
+          <Link href={'/carreer'} className='text-center text-xl md:text-2xl font-semibold ' target={'_blank'} aria-label='Enlace que redirige a página que cuenta acerca de la experiencia de Tomás Hernández'>
+            Ver más <KeyboardDoubleArrowRightIcon/>
           </Link>
         </h3>
 

@@ -1,3 +1,4 @@
+'use client';
 import 'animate.css';
 import { Card } from './Card';
 import { IBusiness } from '../../../types/';
@@ -24,9 +25,7 @@ export const CardExperience = ({business}:ICardExperience) => {
     
     return (
         <Card cardStyles={'h-full md:h-[22rem]  pt-0 !border-0 '} childrenCardStyle={'!px-0 dark:bg-black  '}>
-                <Link href={business.url}>
-                    <a 
-                        target={'_blank'}  
+                <Link href={business.url}  target={'_blank'}  
                         aria-label={`Enlace que redirecciona a la web de ${business.name}`}
                         className='relative w-14 h-14 hover:scale-150 duration-300 !transition-all'>
                         <Image
@@ -38,13 +37,12 @@ export const CardExperience = ({business}:ICardExperience) => {
                             className='rounded-full'
                     
                         />
-                    </a> 
                 </Link>
 
             <div className='px-1 pt-2 flex-grow'>
                 <h3 className='font-semibold text-2xl text-black dark:text-white h-9  block'>
-                    <Link href={business.url}   passHref>
-                        <a target={'_blank'} aria-label={`Enlace que redirecciona a la web de ${business.name}`}> {business.name}</a>
+                    <Link href={business.url} target={'_blank'} aria-label={`Enlace que redirecciona a la web de ${business.name}`}  passHref>
+                        {business.name}
                     </Link>    
                 </h3>
                 <motion.div 
