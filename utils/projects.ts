@@ -11,7 +11,19 @@ export const PROJECTS:IProject[] = [
                     {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Markdown Blog de tomihq', url: "https://github.com/tomihq/tomihq-markdown-blog" }, 
                     {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://www.tomashernandez.tech/"}
                 ]
-        },
+    },
+    {
+        "slug": "airbnb-clone",
+        "title": "Airbnb clone",
+        "description": "Primera vez utilizando Next13 y sus Server Components, Prisma y Next-Auth.",
+        "tecnologies": ["NextJS", "TypeScript", "Prisma", "TailwindCSS", "MongoDB"],
+        "status": "in-progress",
+        "lastUpdate": "17 de Abril de 2023",
+        "links": [
+                    {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Airbnb Clone de tomihq', url: "https://github.com/tomihq/airbnb-clone/" }, 
+                    {icon: 'link', ariaLabel: 'Enlace de la web del Airbnb Clone de tomihq', url: "https://airbnb-clone-tau-lac.vercel.app/"}
+                ]
+    },
     {
         "slug": "twitter-app",
         "title": "Twitter App",

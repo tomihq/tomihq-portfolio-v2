@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ["es"],
     defaultLocale: "es"
   },
+  experimental: {
+    newNextLinkBehavior: false,
+  },
   compiler: {
     // Enables the styled-components SWC transform
     styledComponents: true

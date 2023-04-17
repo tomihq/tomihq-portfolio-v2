@@ -26,7 +26,7 @@ const ExperienceSection = () => {
         </div>
         <h3 className='text-center mb-6  '>
           <Link href={'/carreer'}>
-            <a className='text-center text-xl md:text-2xl font-semibold ' target={'_blank'} aria-label='Enlace que redirige a página que cuenta acerca de la experiencia de Tomás Hernández'> Ver más <KeyboardDoubleArrowRightIcon/> </a>
+            <a className='text-center text-xl md:text-2xl font-semibold '  aria-label='Enlace que redirige a página que cuenta acerca de la experiencia de Tomás Hernández'> Ver más <KeyboardDoubleArrowRightIcon/> </a>
           </Link>
         </h3>
 

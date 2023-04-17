@@ -26,7 +26,6 @@ export const CardExperience = ({business}:ICardExperience) => {
         <Card cardStyles={'h-full md:h-[22rem]  pt-0 !border-0 '} childrenCardStyle={'!px-0 dark:bg-black  '}>
                 <Link href={business.url}>
                     <a 
-                        target={'_blank'}  
                         aria-label={`Enlace que redirecciona a la web de ${business.name}`}
                         className='relative w-14 h-14 hover:scale-150 duration-300 !transition-all'>
                         <Image
