@@ -8,7 +8,7 @@ const Carreer: NextPage = () => {
     <Layout 
     title={'Mi camino como Software Engineer'}
     pageDescription={'Tomi Hernández Experience as a Software Engineer Page'}
-    imageFullUrl={'https://avatars.githubusercontent.com/u/72570859?s=400&u=49352445697d9e9b2cd7ff878022bb65c9bf50d3&v=4'}
+    imageFullUrl={'https://res.cloudinary.com/dha5dv59h/image/upload/v1694695526/voDy7FLI_400x400_bnwpsa.webp'}
     canonicalURL={'/carreer'}
     robotsAction={'follow'}
     >

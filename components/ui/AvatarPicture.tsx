@@ -4,7 +4,7 @@ export const AvatarPicture = () =>{
     return(
         <section className='pb-4'>
             <Image
-                src={AVATAR.src}
+                src={AVATAR}
                 className='filter grayscale rounded-full max-h-32'
                 alt="Tomás Hernández Picture"
                 width={128}

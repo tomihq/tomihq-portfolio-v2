@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ["es"],
     defaultLocale: "es"
   },
+  images: {
+    domains: ["res.cloudinary.com"]
+  },
   experimental: {
     newNextLinkBehavior: false,
   },

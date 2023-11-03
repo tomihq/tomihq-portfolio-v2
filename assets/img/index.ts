@@ -1,4 +1,4 @@
-import AVATAR from './tomi-2022.webp';
+const AVATAR = 'https://res.cloudinary.com/dha5dv59h/image/upload/v1694695526/voDy7FLI_400x400_bnwpsa.webp';
 import GRANSLIVINGWEBP from './gransliving-logo.webp'
 import GRANSLIVINGPNG from './gransliving-logo.png'
 import NECXUSWEBP from './necxus.webp'
