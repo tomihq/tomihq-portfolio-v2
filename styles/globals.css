@@ -4,7 +4,7 @@
 
 @layer base{
   body{
-    @apply dark:bg-black dark:bg-[url('/static/img/upper-gradient.svg')] dark:bg-no-repeat ;
+    @apply dark:bg-black  dark:bg-no-repeat ;
    
   }
 }
@@ -12,8 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a {

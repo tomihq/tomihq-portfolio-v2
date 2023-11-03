@@ -23,18 +23,18 @@ export const CardExperience = ({business}:ICardExperience) => {
     )
     
     return (
-        <Card cardStyles={'h-full md:h-[22rem]  pt-0 !border-0 '} childrenCardStyle={'!px-0 dark:bg-black  '}>
+        <Card cardStyles={'h-full md:h-[22rem]  pt-0 '} >
                 <Link href={business.url}>
                     <a 
                         aria-label={`Enlace que redirecciona a la web de ${business.name}`}
-                        className='relative w-14 h-14 hover:scale-150 duration-300 !transition-all'>
+                        className={`relative w-14 h-14 hover:scale-150 duration-300 !transition-all ${business.id === 'ptn'?'scale-150':''}` }> 
                         <Image
                             src={business.images[0].url}
                             onError={() => business.images[1]}
                             alt={business.images[0].alt}
                             layout={'fill'}
                             objectFit={'cover'}
-                            className='rounded-full'
+                            className={`rounded-full`}
                     
                         />
                     </a> 

@@ -11,7 +11,7 @@ const ExperienceSection = () => {
     <section className=' border-gray-100 border-b-2
     dark:border-stone-600 mb-6 '>
         <h2 className='font-bold text-3xl md:text-4xl text-black dark:text-white pr-8 mb-3 block'>Experiencia</h2>
-        <div className='flex flex-col md:flex-row w-full gap-4 md:gap-0 justify-between mb-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 w-full gap-8 justify-between mb-6'>
 
             {
                 EXPERIENCES.map((experience: IBusiness) =>{

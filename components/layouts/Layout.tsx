@@ -22,6 +22,9 @@ export const Layout:FC<PropsWithChildren<Props>> = ({ children, title, pageDescr
             <meta name="og:description" content={pageDescription}/>
             <meta name="twitter:title" content={title}/> 
             <meta name="twitter:description" content={pageDescription}/> 
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
             {
                 imageFullUrl && (
                    <>

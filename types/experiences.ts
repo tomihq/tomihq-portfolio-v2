@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface IBusiness {
+    id: string;
     name: string;
     url: string;
     periods: IBusinessPeriods[]
