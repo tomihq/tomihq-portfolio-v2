@@ -9,7 +9,7 @@ export const PROJECTS:IProject[] = [
         "lastUpdate": "28 de Noviembre de 2022",
         "links": [
                     {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Markdown Blog de tomihq', url: "https://github.com/tomihq/tomihq-markdown-blog" }, 
-                    {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://www.tomashernandez.tech/"}
+                    {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://www.tomihq-markdown-blog.vercel.app/"}
                 ]
     },
     {
