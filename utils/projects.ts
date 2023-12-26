@@ -1,6 +1,17 @@
 import { IProject } from "../interfaces";
 export const PROJECTS:IProject[] = [
     {
+        "slug": "almas-fortalecidas",
+        "title": "Almas Fortalecidas - Real Ecommerce",
+        "description": "Almas Fortalecidas es un comercio orientado a la venta de bijou y piedras energéticas. También existe un panel de administración.",
+        "tecnologies": ["NextJS (13)", "TypeScript", "MongoDB", "Redis", "MemCached", "NodeJS", "NGINX"],
+        "status": "in-progress",
+        "links": [
+            {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://www.almasfortalecidas.com.ar/"}
+        ],
+        "lastUpdate": "25 de Diciembre de 2023"
+    },
+    {
         "slug": "markdown-blog",
         "title": "Markdown Blog",
         "description": "Priorizando accesibilidad web, el rendimiento, visibilidad y escabilidad utilizando buenas prácticas y contenido generado de forma estática siempre que sea posible.",
@@ -11,32 +22,6 @@ export const PROJECTS:IProject[] = [
                     {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Markdown Blog de tomihq', url: "https://github.com/tomihq/tomihq-markdown-blog" }, 
                     {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://www.tomashernandez.tech/"}
                 ]
-    },
-    {
-        "slug": "airbnb-clone",
-        "title": "Airbnb clone",
-        "description": "Primera vez utilizando Next13 y sus Server Components, Prisma y Next-Auth.",
-        "tecnologies": ["NextJS", "TypeScript", "Prisma", "TailwindCSS", "MongoDB"],
-        "status": "in-progress",
-        "lastUpdate": "17 de Abril de 2023",
-        "links": [
-                    {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Airbnb Clone de tomihq', url: "https://github.com/tomihq/airbnb-clone/" }, 
-                    {icon: 'link', ariaLabel: 'Enlace de la web del Airbnb Clone de tomihq', url: "https://airbnb-clone-tau-lac.vercel.app/"}
-                ]
-    },
-    {
-        "slug": "twitter-app",
-        "title": "Twitter App",
-        "description": "Mi primer proyecto. Red social parecida a Twitter el cual tiene autenticación, caché, websockets, y lo común en Twitter, crear tweets, eliminarlos, editar tu perfil, recibir notificaciones cuando llega un mensaje o hay evento en un tweet tuyo, etc.",
-        "tecnologies": ["NodeJS", "React", "MongoDB", "Vanilla CSS", "Material UI", "SocketIO"],
-        "status": "in-progress",
-        "lastUpdate": "18 de Septiembre de 2022",
-        "links": [
-            {
-                icon: 'github',  ariaLabel: 'Enlace de GitHub al repositorio del Twitter Clone Basic de tomihq', 
-                 url: "https://github.com/tomihq/twitter-clone-basic"
-            }
-        ]
     },
     {
         "slug": "react-compound-component-pattern",

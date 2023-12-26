@@ -41,8 +41,12 @@ const Carreer: NextPage = () => {
                                 <span className='font-semibold'>Necxus Negocios Informáticos S.A.</span> - Ago. 2021 / Oct. 2022
                             </li>
                             <li className='break-words'>
-                                <span className='font-semibold'>GransLiving</span> - Sep. 2022 / Actualidad
+                                <span className='font-semibold'>GransLiving</span> - Sep. 2022 / Dic. 2023
                             </li>
+                            <li className='break-words'>
+                                <span className='font-semibold'>Procuración del Tesoro</span> - Ago. 2023 / Actualidad
+                            </li>
+
                         </ul>
                     </div>
             </section>
@@ -51,7 +55,7 @@ const Carreer: NextPage = () => {
                 <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Tecnologies</h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-white'>
                     <div className='flex flex-col text-gray-800 dark:text-white gap-1'>
-                        <span><span className='font-semibold dark:text-white'>Backend: </span>["Haskell", "C", "Visual Basic", "Java", "PHP", "TypeScript"]</span>
+                        <span><span className='font-semibold dark:text-white'>Backend: </span>["JavaScript", "TypeScript", "Haskell", "C", "Visual Basic", "Java", "PHP"]</span>
                         <span><span className='font-semibold dark:text-white'>Frontend: </span>React, Angular, Flutter, jQuery</span>
                         <span><span className='font-semibold dark:text-white'>Frameworks: </span> NestJS, Express, NextJS, Laravel, TailwindCSS, Bootstrap</span>
                       

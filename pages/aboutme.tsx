@@ -44,7 +44,7 @@ const AboutMe: NextPage = () => {
                 <h3 className='font-bold text-2xl text-black dark:text-white mb-2'>Información personal </h3>
                     <div className='flex flex-col md:flex-row gap-6 text-gray-800 dark:text-gray-400'>
                         <ol>
-                                <li>🔷 21 años</li>
+                                <li>🔷 22 años</li>
                                 <li>📌 Buenos Aires, Argentina </li>
                                 <li>😺 Amo los gatos</li>
                                 <li>💫 Me gusta pensar y proyectar mis planes a futuro</li>
@@ -65,8 +65,7 @@ const AboutMe: NextPage = () => {
                                 <li className='text-black dark:text-white font-semibold'> Estudiante de Ciencias de la Computación en la <strong className='font-semibold'>Universidad de Buenos Aires</strong> (UBA).</li>
                                 <li>Leo <b className=' text-black dark:text-white font-semibold'>documentación</b></li>
                                 <li>Leo <b className='text-black dark:text-white font-semibold'>libros</b> acerca de desarrollo de Software.</li>
-                                <li>Cursos en <b className='text-black dark:text-white font-semibold'>Udemy</b>.</li>
-                                <li>Cursos en <b className='text-black dark:text-white font-semibold'>Platzi</b>.</li>
+                               
                                 
                         </ol>
                 </div>
