@@ -20,11 +20,7 @@ export const Footer = () => {
                         </Link> 
                     </li>
 
-                    <li className="mb-1 text-xl md:text-base">
-                        <Link href="https://open.spotify.com/user/rainbowskynow?si=423e038cabcf4af9" passHref>
-                             <a target={'_blank'} rel="noreferrer">Spotify</a>
-                        </Link> 
-                    </li>
+                   
 
                 </ul>
 
