@@ -5,6 +5,7 @@ import NECXUSWEBP from './necxus.webp'
 import NECXUSPNG from './necxus.png'
 import PTNWEBP from './ptn.webp'
 import PTNJPG from './ptn.jpg'
+import ALMAS_FORTALECIDAS from './almas_fortalecidas.png'
 
 export {
     AVATAR,
@@ -13,5 +14,6 @@ export {
     NECXUSWEBP,
     NECXUSPNG,
     PTNWEBP,
-    PTNJPG
+    PTNJPG,
+    ALMAS_FORTALECIDAS
 }

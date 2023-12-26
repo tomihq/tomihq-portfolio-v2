@@ -1,7 +1,24 @@
-import { GRANSLIVINGPNG, GRANSLIVINGWEBP, NECXUSPNG, NECXUSWEBP, PTNJPG, PTNWEBP } from "../assets";
+import { ALMAS_FORTALECIDAS, GRANSLIVINGPNG, GRANSLIVINGWEBP, NECXUSPNG, NECXUSWEBP, PTNJPG, PTNWEBP } from "../assets";
 import { IBusiness } from "../types";
 
 export const EXPERIENCES:IBusiness[] = [
+    {
+        id: 'almas-fortalecidas',
+        name: 'Almas Fortalecidas',
+        url: 'https://www.almasfortalecidas.com.ar/',
+        periods: [
+            
+            {
+                role: 'Entrepreneur',
+                datePeriod: 'May. 2023 - Presente',
+                tecnologies: ['Express','NodeJS', 'NextJS', 'NGINX', 'MEMCACHED', 'Redis', 'JavaScript', 'TypeScript', 'MongoDB', 'PostgreSQL']
+            },
+          
+        ],
+        images: [{url: ALMAS_FORTALECIDAS, alt: 'Logo de Almas Fortalecidas'}, {url: ALMAS_FORTALECIDAS, alt: 'Logo de Almas Fortalecidas'}]
+   
+
+    },
     {
         id: 'ptn',
         name: 'Procuración del Tesoro',
@@ -27,12 +44,12 @@ export const EXPERIENCES:IBusiness[] = [
             
             {
                 role: 'Full-Stack Developer',
-                datePeriod: 'Dic. 2022 - Presente',
+                datePeriod: 'Nov. 2022 - Dic. 2023',
                 tecnologies: ['Express', 'NodeJS', 'TypeScript', 'MongoDB', 'ReactJS', 'NextJS', 'GraphQL', 'GitHub', 'GitLab']
             },
             {
                 role: 'Back-End Developer',
-                datePeriod: 'Sep. 2022 - Dic. 2022',
+                datePeriod: 'Sep. 2022 - Nov. 2022',
                 tecnologies: ['Express', 'NodeJS', 'TypeScript', 'MongoDB', 'GitHub']
             },
         ],
