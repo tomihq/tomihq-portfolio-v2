@@ -41,7 +41,7 @@ export const CardExperience = ({business}:ICardExperience) => {
                 </Link>
 
             <div className='px-1 pt-2 flex-grow'>
-                <h3 className='font-semibold text-2xl text-black dark:text-white h-9  block'>
+                <h3 className='font-semibold text-2xl text-black dark:text-white h-auto block'>
                     <Link href={business.url}   passHref>
                         <a target={'_blank'} aria-label={`Enlace que redirecciona a la web de ${business.name}`}> {business.name}</a>
                     </Link>    
