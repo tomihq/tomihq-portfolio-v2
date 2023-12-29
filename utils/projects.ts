@@ -7,7 +7,7 @@ export const PROJECTS:IProject[] = [
         "tecnologies": ["Design Systems & Docs",  "Next.js (14)", "TypeScript", "MongoDB", "Redis", "Shadcn UI", "TailwindCSS"],
         "status": "in-progress",
         "links": [
-            {icon: 'link', ariaLabel: 'Enlace de Quick Linkr', url: "https://quicklinkr.vercel.app/"},
+            {icon: 'link', ariaLabel: 'Enlace de Quick Linkr', url: "https://tmhq.vercel.app/l2mdHLf"},
             {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del frontend de QuickLinkr', url: "https://tmhq.vercel.app/4LhuOIs" }, 
             {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del backend de QuickLinkr', url: "https://tmhq.vercel.app/oovStQk" }, 
         ],
@@ -20,7 +20,7 @@ export const PROJECTS:IProject[] = [
         "tecnologies": ["NextJS (13)", "TypeScript", "MongoDB", "Redis", "MemCached", "NodeJS", "NGINX"],
         "status": "in-progress",
         "links": [
-            {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://www.almasfortalecidas.com.ar/"},
+            {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://tmhq.vercel.app/EOZviWA"},
             
         ],
         "lastUpdate": "25 de Diciembre de 2023"
@@ -34,7 +34,7 @@ export const PROJECTS:IProject[] = [
         "lastUpdate": "28 de Noviembre de 2022",
         "links": [
                     {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del Markdown Blog de tomihq', url: "https://github.com/tomihq/tomihq-markdown-blog" }, 
-                    {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://www.tomihq-markdown-blog.vercel.app/"}
+                    {icon: 'link', ariaLabel: 'Enlace de la web del Markdown Blog de tomihq', url: "https://tmhq.vercel.app/so4tJem"}
                 ]
     },
     {
@@ -48,12 +48,12 @@ export const PROJECTS:IProject[] = [
             {
                 icon: 'github',  
                 ariaLabel: 'Enlace de GitHub al repositorio de Compound Component Pattern en ReactJS', 
-                url: "https://github.com/tomihq/tomihq-react-advanced/tree/compound-component-pattern"
+                url: "https://tmhq.vercel.app/YnGN8wf"
             },
             {
                 icon: 'link',  
                 ariaLabel: 'Enlace de la web del proyecto de Compound Component Pattern en ReactJS', 
-                url: "https://tomihq-compound-components-pattern.netlify.app/"
+                url: "https://tmhq.vercel.app/6i3mDHO"
             },
 
         ]
