@@ -1,13 +1,27 @@
 import { IProject } from "../interfaces";
 export const PROJECTS:IProject[] = [
     {
+        "slug": "quicklinkr",
+        "title": "Quick Linkr",
+        "description": "Shorten and share links instantly with QuickLinkr. The perfect tool to make your URLs more manageable and shareable.",
+        "tecnologies": ["Design Systems & Docs",  "Next.js (14)", "TypeScript", "MongoDB", "Redis", "Shadcn UI", "TailwindCSS"],
+        "status": "in-progress",
+        "links": [
+            {icon: 'link', ariaLabel: 'Enlace de Quick Linkr', url: "https://quicklinkr.vercel.app/"},
+            {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del frontend de QuickLinkr', url: "https://tmhq.vercel.app/4LhuOIs" }, 
+            {icon: 'github', ariaLabel: 'Enlace de GitHub al repositorio del backend de QuickLinkr', url: "https://tmhq.vercel.app/oovStQk" }, 
+        ],
+        "lastUpdate": "28 de Diciembre de 2023"
+    },
+    {
         "slug": "almas-fortalecidas",
         "title": "Almas Fortalecidas - Real Ecommerce",
         "description": "Almas Fortalecidas es un comercio orientado a la venta de bijou y piedras energéticas. También existe un panel de administración.",
         "tecnologies": ["NextJS (13)", "TypeScript", "MongoDB", "Redis", "MemCached", "NodeJS", "NGINX"],
         "status": "in-progress",
         "links": [
-            {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://www.almasfortalecidas.com.ar/"}
+            {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://www.almasfortalecidas.com.ar/"},
+            
         ],
         "lastUpdate": "25 de Diciembre de 2023"
     },
