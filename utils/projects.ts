@@ -17,7 +17,7 @@ export const PROJECTS:IProject[] = [
         "slug": "almas-fortalecidas",
         "title": "Almas Fortalecidas - Real Ecommerce",
         "description": "Almas Fortalecidas es un comercio orientado a la venta de bijou y piedras energéticas. También existe un panel de administración.",
-        "tecnologies": ["NextJS (13)", "TypeScript", "MongoDB", "Redis", "MemCached", "NodeJS", "NGINX"],
+        "tecnologies": ["NextJS (14)", "TypeScript", "MongoDB", "Redis", "MemCached", "Upstash", "NodeJS", "NGINX"],
         "status": "in-progress",
         "links": [
             {icon: 'link', ariaLabel: 'Enlace de Almas Fortalecidas', url: "https://tmhq.vercel.app/EOZviWA"},
