@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <div className='flex flex-col pr-8 md:w-9/12'>
             <h1 className="font-bold text-4xl md:text-5xl tracking-tight mb-1 text-black dark:text-white pb-1">Tomás Hernández</h1>
             
-            <p className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Software Engineer at <b className='text-black dark:text-white font-semibold'>PTN</b></p>
+            <p className='tracking-tight mb-1 ml-1 text-stone-600 dark:text-white pb-2'>Software Engineer</p>
              
             <span className='text-gray-600 dark:text-gray-400 mb-4 px-1'>Amo hacer aplicaciones
               <b className="text-black dark:text-white font-semibold"> escalables</b>,
